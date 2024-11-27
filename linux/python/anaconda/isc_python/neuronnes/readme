@@ -1,0 +1,4 @@
+convert num_8.jpg -depth 8 num_8-8bit.jpg
+convert num_8-8bit.jpg -channel RGB -negate output.png
+conda install conda-forge::tensorflow
+conda install conda-forge::keras
