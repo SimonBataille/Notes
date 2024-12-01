@@ -1,3 +1,6 @@
+# Necessary packages
+#!pip install datasets evaluate transformers[sentencepiece]
+
 # Importation des bibliothèques nécessaires depuis la bibliothèque Hugging Face
 from transformers import pipeline
 
