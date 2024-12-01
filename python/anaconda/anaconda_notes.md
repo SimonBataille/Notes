@@ -193,8 +193,10 @@ Jupyter Lab fonctionne avec votre environnement grâce à des mécanismes implic
 
 ## 7.2. Activation (base)
 Si conda n'est plus dans le path et que .bashrc n'est pas modifié
+```bash
 	source ~/anaconda3/etc/profile.d/conda.sh
 	conda activate base
+```
 
 # 8. Isolation
 - L’isolation dans Conda repose sur des mécanismes simples (chemins, variables d’environnement) et ne fournit pas de sandbox système complète comme Docker. Si vous avez besoin d’une isolation stricte, Docker ou d’autres technologies de conteneurisation sont plus adaptés.

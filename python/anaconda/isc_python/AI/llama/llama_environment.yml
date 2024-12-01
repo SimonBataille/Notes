@@ -1,0 +1,8 @@
+name: llama_environment
+channels:
+  - defaults
+dependencies:
+  - python
+  - pandas
+  - matplotlib
+  - numpy
