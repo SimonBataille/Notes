@@ -1,12 +1,12 @@
-# Notes about anaconda on linux systems
+# 1. Notes about anaconda on linux systems
 
-# Docs
+# 2. Docs
 https://docs.conda.io/projects/conda/en/latest/user-guide
 
 # Create python project
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/creating-projects.html
 
-# Create Conda project for jupyter-lab
+# 3. Create Conda project for jupyter-lab
 ```
 mkdir example
 cd example
@@ -41,7 +41,7 @@ python -m ipykernel install --user --name=example --display-name "Python (exampl
 Installed kernelspec example in /home/simon/.local/share/jupyter/kernels/example
 ```
 
-# Manage Conda CLI
+# 4. Manage Conda CLI
 ```
 conda --version
 conda env list
@@ -82,7 +82,7 @@ jupyter notebook stop 8889
 history
 ```
 
-# Kernel
+# 5. Kernel
 - Un kernel est un processus qui exécute le code que vous écrivez dans Jupyter Notebook ou Jupyter Lab. Il agit comme un moteur d'exécution pour une langue donnée, généralement Python dans votre cas.
 
 - Voici comment le kernel et Jupyter Lab interagissent :
@@ -128,7 +128,7 @@ Dans votre cas :
 Si vous souhaitez ajouter ou tester d'autres kernels, vous pouvez explorer des kernels pour R, Julia ou même des langages comme C++ avec xeus.
 
 
-# Kernel Automatic
+# 6. Default Kernel
 
 - Jupyter Lab peut détecter et utiliser un kernel même si vous n'avez pas explicitement installé ipykernel ou exécuté la commande python -m ipykernel install. Voici pourquoi cela fonctionne quand même :
 
@@ -183,3 +183,27 @@ Même si tout fonctionne dans votre cas, il peut être utile de :
 6. Conclusion
 
 Jupyter Lab fonctionne avec votre environnement grâce à des mécanismes implicites et des partages entre l'environnement base et les autres environnements conda. Cependant, pour une meilleure clarté et portabilité, il est souvent recommandé d'installer explicitement ipykernel et de configurer les kernels de manière spécifique.
+
+# 7. Activation Conda Environment
+## 7.1. Résumé des commandes :
+
+    Désactiver base au démarrage : conda config --set auto_activate_base false
+    Activer manuellement base : conda activate base
+    Réactiver base par défaut : conda config --set auto_activate_base true
+
+## 7.2. Activation (base)
+Si conda n'est plus dans le path et que .bashrc n'est pas modifié
+	source ~/anaconda3/etc/profile.d/conda.sh
+	conda activate base
+
+# 8. Isolation
+- L’isolation dans Conda repose sur des mécanismes simples (chemins, variables d’environnement) et ne fournit pas de sandbox système complète comme Docker. Si vous avez besoin d’une isolation stricte, Docker ou d’autres technologies de conteneurisation sont plus adaptés.
+
+## Résumé : Isolation Conda vs Docker
+|Caractéristique | Conda | Docker
+|--|--|--|
+Fichiers | Installé dans un répertoire dédié | Installé dans un système de fichiers isolé (UnionFS)
+Réseau | Accès complet au réseau système | Réseau isolé par défaut
+Processus | Aucune isolation spécifique	| Isolation via namespaces (PID, UTS, etc.)
+Ressources (CPU, RAM) | Partage total des ressources système | Limité par cgroups
+Portabilité	| Doit être configuré sur chaque machine | Conteneur portable avec l’environnement
