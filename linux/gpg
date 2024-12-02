@@ -1,0 +1,283 @@
+### Solve gnupg error
+find ~/.gnupg -type f -exec chmod 600 {} \; # Set 600 for files
+find ~/.gnupg -type d -exec chmod 700 {} \; # Set 700 for directories
+
+before:
+ simon  ~  find ~/.gnupg -type d -exec ls -l {} \;
+total 20
+drwxr-xr-x 2 simon simon 4096 Oct 25 21:49 crls.d
+drwx------ 2 simon simon 4096 Oct 25 21:49 private-keys-v1.d
+-rw-r--r-- 1 simon simon 1425 Oct 25 21:49 pubring.kbx
+-rw-r--r-- 1 simon simon   32 Oct 25 21:49 pubring.kbx~
+-rw-r--r-- 1 simon simon 1200 Oct 25 21:49 trustdb.gpg
+total 0
+total 4
+-rw-r--r-- 1 simon simon 5 Oct 25 21:49 DIR.txt
+
+ simon  ~  ll -R .gnupg/
+.gnupg/:
+total 28
+drwxr-xr-x  4 simon simon 4096 Oct 27 23:16 ./
+drwxr-xr-x 19 simon simon 4096 Oct 27 23:23 ../
+drwxr-xr-x  2 simon simon 4096 Oct 25 21:49 crls.d/
+drwx------  2 simon simon 4096 Oct 25 21:49 private-keys-v1.d/
+-rw-r--r--  1 simon simon 1425 Oct 25 21:49 pubring.kbx
+-rw-r--r--  1 simon simon   32 Oct 25 21:49 pubring.kbx~
+-rw-r--r--  1 simon simon 1200 Oct 25 21:49 trustdb.gpg
+
+.gnupg/crls.d:
+total 12
+drwxr-xr-x 2 simon simon 4096 Oct 25 21:49 ./
+drwxr-xr-x 4 simon simon 4096 Oct 27 23:16 ../
+-rw-r--r-- 1 simon simon    5 Oct 25 21:49 DIR.txt
+
+.gnupg/private-keys-v1.d:
+total 8
+drwx------ 2 simon simon 4096 Oct 25 21:49 ./
+drwxr-xr-x 4 simon simon 4096 Oct 27 23:16 ../
+
+
+after:
+ simon  ~  ll -R .gnupg/
+.gnupg/:
+total 28
+drwx------  4 simon simon 4096 Oct 27 23:16 ./
+drwxr-xr-x 19 simon simon 4096 Oct 27 23:28 ../
+drwx------  2 simon simon 4096 Oct 25 21:49 crls.d/
+drwx------  2 simon simon 4096 Oct 25 21:49 private-keys-v1.d/
+-rw-------  1 simon simon 1425 Oct 25 21:49 pubring.kbx
+-rw-------  1 simon simon   32 Oct 25 21:49 pubring.kbx~
+-rw-------  1 simon simon 1200 Oct 25 21:49 trustdb.gpg
+
+.gnupg/crls.d:
+total 12
+drwx------ 2 simon simon 4096 Oct 25 21:49 ./
+drwx------ 4 simon simon 4096 Oct 27 23:16 ../
+-rw------- 1 simon simon    5 Oct 25 21:49 DIR.txt
+
+.gnupg/private-keys-v1.d:
+total 8
+drwx------ 2 simon simon 4096 Oct 25 21:49 ./
+drwx------ 4 simon simon 4096 Oct 27 23:16 ../
+
+
+### gpg --gen_key
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key 0x298C2C02B988C25E marked as ultimately trusted
+gpg: directory '/home/simon/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/home/simon/.gnupg/openpgp-revocs.d/684A61BD6BBB4E2F08920EE1298C2C02B988C25E.rev'
+public and secret key created and signed.
+
+pub   rsa3072/0x298C2C02B988C25E 2021-10-28 [SC] [expires: 2023-10-28]
+      Key fingerprint = 684A 61BD 6BBB 4E2F 0892  0EE1 298C 2C02 B988 C25E
+uid                              BATAILLE SIMON <example@email.com>
+sub   rsa3072/0x8600828828B2F4A6 2021-10-28 [E] [expires: 2023-10-28]
+
+
+sec  rsa3072/0x298C2C02B988C25E
+     created: 2021-10-28  expires: 2023-10-28  usage: SC
+     trust: ultimate      validity: ultimate
+ssb  rsa3072/0x8600828828B2F4A6
+     created: 2021-10-28  expires: 2023-10-28  usage: E
+ssb  rsa3072/0xD0965F2904EF20A8
+     created: 2021-10-28  expires: 2023-10-28  usage: S
+[ultimate] (1). BATAILLE SIMON <example@email.com>
+
+
+
+
+
+
+https://ungeek.fr/gpg-et-le-chiffrement-pour-tous/
+
+
+#### Asymetric Encryption
+public-key.gpg + "some text" = <encrypted garbage>
+private-key.gpg + <encrypted garbage> = "some text"
+however you cannot do this:public-key.gpg + <encrypted garbage> != "some text"
+
+gpg --list-keys
+
+gpg: /home/simon/.gnupg/trustdb.gpg: trustdb created
+gpg: key 885A7F0097E8CD49 marked as ultimately trusted
+gpg: directory '/home/simon/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/home/simon/.gnupg/openpgp-revocs.d/AE73A263821DECFC06F54F11885A7F0097E8CD49.rev'
+public and secret key created and signed.
+
+pub   rsa3072 2020-11-14 [SC] [expires: 2022-11-14]
+      AE73A263821DECFC06F54F11885A7F0097E8CD49
+uid                      Simon Bataille <example@email.com>
+sub   rsa3072 2020-11-14 [E] [expires: 2022-11-14]
+
+
+https://riseup.net/en/security/message-security/openpgp/best-practices#keep-your-primary-key-entirely-offline
+https://lists.gnupg.org/pipermail/gnupg-users/2015-December/054881.html
+
+GnuPG 2.1 merged the private keyring into the public keyring, both for the old keyring and new keybox formats. So yes: pubring.kbx holds both public and private keys
+The keygrip is computed from the public elements of the key. Thus it
+is the same for the public and the secret key. For details see the
+function in Libgcrypt.
+
+Post by Hauke Laging
+Is the keygrip computed over the passphrase-protected key material (which the
+application knows)? I.e. does the keygrip change if the passphrase changes?
+The keygrip is computed from the public elements of the key. Thus it
+is the same for the public and the secret key. For details see the
+function in Libgcrypt.
+Post by Hauke Laging
+It seems to me that you can only check for keys which you know. Is it possible
+to get a list of the known keygrips from gpg-agent? I create keys in an
+gpg-connect-agent 'keyinfo --list' /bye
+
+
+gpg --encrypt --sign --armor -r example@email.com TODO
+gpg --decrypt TODO.asc > plain.txt
+gpg -v --decrypt ~/Downloads/example@email.com.gpg > plain.txt
+
+gpgconf --list-config
+> gpgconf: can not open global config file '/etc/gnupg/gpgconf.conf': No such file or directory : pas de fichier de configuration, checker la doc /usr/share/doc/gnupg/examples/gpgconf.conf,/usr/share/doc/gnupg/examples/gpgconf.conf, /usr/share/doc/gpgconf/examples/gpgconf.conf
+
+sudo gpgconf  --list-dirs
+> sysconfdir:/etc/gnupg
+bindir:/usr/bin
+libexecdir:/usr/lib/gnupg
+libdir:/usr/lib/x86_64-linux-gnu/gnupg
+datadir:/usr/share/gnupg
+localedir:/usr/share/locale
+socketdir:/root/.gnupg
+dirmngr-socket:/root/.gnupg/S.dirmngr
+agent-ssh-socket:/root/.gnupg/S.gpg-agent.ssh
+agent-extra-socket:/root/.gnupg/S.gpg-agent.extra
+agent-browser-socket:/root/.gnupg/S.gpg-agent.browser
+agent-socket:/root/.gnupg/S.gpg-agent
+homedir:/root/.gnupg
+
+cipher : chiffrer en entier un fichier : un fichier --- chiffrement ---> un nouveau fichier
+disgest : hasher = just un hash sous forme AFAFAFV561
+
+
+ETAPE 1:
+
+formater une clef usb
+on crée une clef maitre protéger par un mot de passe
+clé USB avec clef maître
+
+on obtient :
+    1. gpg -K : clef maître sec, sous clef maitre secrete
+    2. gpg -k : clef maitre publique, sous clef publique pour chiffrer
+
+NB: on n'utilise jamais la clef maitre publique pour chiffrer ou signer des documents
+
+ETAPE 2 :
+on ajoute une sous-clef publique à notre clef maître publique
+
+ETAPE 3:
+on crée un certificat de revocation pour la clef maitre et on l'exporte sur la clef usb
+
+ETAPE 4:
+on exporte la claf maitre secrete sur la clef usb
+> gpg -a --export-secret-key FEGZG88FZEF > /media/usb/usb-key/secret_key.asc : "a" pour armored ascii
+
+ETAPE 5:
+on exporte la claf maitre publique sur la clef usb
+> gpg -a --export FEGZG88FZEF > /media/usb/usb-key/secret_key.asc : "a" pour armored ascii
+
+ETAPE 6:
+on exporte les subkeys
+> gpg -a --export-secret-subkeys ZEFAEF9498 > /media/usb/usb-key/secret_subkeys.asc : "a" pour armored ascii
+
+ETAPE 7: le ménage
+on efface les clefs secretes
+> gpg --delete-secret-keys FEGZG88FZEF
+> gpg --delete-key FEGZG88FZEF
+
+ETAPE 8:
+on importe les sous clef
+
+
+
+
+gpg -K : liste des clefs secrètes
+gpg -k : liste des clefs publiques
+gpg --gen-key : générer une clef : clef RSA = clef asymétrique
+
+
+#### GPG
+https://geekyshacklebolt.wordpress.com/2019/03/06/how-to-encrypt-usb-drives-with-luks/ : HOWTO encrypt usb key
+sudo apt-get --only-upgrade install gpg : check if gpg is update
+
+
+gpg --import .gnupg/secret_key
+gpg2 --output /path_to_file/revocation.asc --generate-revocation : certificat revokation
+gpg -a --export-secret-keys 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/secret_key.asc
+gpg --export-secret-keys 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/secret_key.gpg
+gpg -a --export 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/public_key.asc
+gpg --export 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/public_key.gpg
+
+#### add and trust other public key
+https://www.gnupg.org/gph/en/manual/x56.html
+gpg --import /path_to_file/vanpedro_public_key.asc
+gpg -k
+gpg --edit-key example@email.com
+list
+fpg
+sign
+gpg --sign-key example@email.com
+
+gpg -a --export example@email.com > /path_to_file/gmail_public_key.asc
+gpg --encrypt --sign --armor -r example@email.com test_crypt.txt
+
+gpg --import /path_to_file/gmail_public_key.asc
+gpg --sign-key example@email.com
+gpg -d /path_to_file/test_crypt.txt.asc
+
+
+
+
+#### Key infos
+https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/
+gpg -a --export "Simon Bataille" | gpg --list-packets --verbose
+gpg --list-keys --with-subkey-fingerprints
+date -d @1281838967
+
+
+OTHER USB KEY for subkeys
+
+gpg -a --export-secret-subkeys 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/secret_subkeys.asc
+gpg --export-secret-subkeys 847F41AC2A11F91F7B93967565777FF8B4F6A26C > /path_to_file/secret_subkeys.gpg
+
+gpg --delete-secret-keys 847F41AC2A11F91F7B93967565777FF8B4F6A26C
+gpg --delete-keys 847F41AC2A11F91F7B93967565777FF8B4F6A26C
+
+ll -rt ~/.gnupg/
+> .#lk0x0000558378253f20.simon-Aspire-V3-571G.7896
+> private-keys-v1.d/ : EMPTY
+> pubring.kbx
+> trustdb.gpg
+
+
+NEW MACHNE
+
+gpg --import /path_to_file/secret_subkeys.gpg
+
+gpg --encrypt --sign --armor -r example@email.com encrypted_file
+gpg -k --keyid-format long
+gpg --with-keygrip --list-secret-keys example@email.com
+gpg --delete-public-and-secret-keys example@email.com
+
+
+
+Update expire date : https://sites.lafayette.edu/newquisk/archives/504
+
+
+METHOD :
+gpg --import /path_to_keys/secret_subkeys.gpg
+gpg -K
+gpg --list-packets encrypted_file.gpg
+gpg --encrypt --sign -r example@email.com encrypted_file
+gpg --encrypt --sign --armor -r example@email.com ../encrypted_file
+gpg --delete-secret-and-public-keys example@email.com
+

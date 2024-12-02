@@ -1,0 +1,401 @@
+### DNS
+sudo lsof -i -P -n
+nslookup -query=any redhat.com
+sudo tcpdump -n -s 1500 -i wlp3s0 udp port 53
+( nmcli dev list || nmcli dev show ) 2>/dev/null | grep DNS
+nm-tool | grep DNS
+dig viti.pf
+traceroute viti.fr
+nslookup -type=soa ora.pf
+sudo netstat -anptu
+nmcli device show wlp3s0
+dig @ns2.viti.pf viti.pf
+
+dig +short myip.opendns.com @resolver1.opendns.com
+
+
+### ELF, GDB, RAM, etc...
+sudo echo LOL >/tmp/lol
+sudo hdparm --fibmap /tmp/lol
+sudo dd if=/dev/sdc skip=245363168 count=8 status=none | hexdump -C
+sudo hdparm --fibmap test.c
+pmap -d 14517
+
+
+gcc -Wall -g -static  -o  test test.c
+objdump -d  test > test_static_dump
+
+gcc -c hello.S
+ld -o hello hello.o ### dynamically run the programm
+
+readelf -S --wide hello
+ps -aux | grep hello
+objdump -d hello --section=.text
+readelf --file-header hello
+strace ./hello
+
+./gdb hello
+disass _start
+b *_start+0
+info all-registers
+info registers
+x/i $rip
+p/x $ps
+nexti
+printf "%s\n",0x402000
+
+=> 0x0000000000401000 <+0>:	mov    $0x1,%rax  # 0x01 : syscall write
+   0x0000000000401007 <+7>:	mov    $0x1,%rdi # 0x01 : stdout
+   0x000000000040100e <+14>:	mov    $0x402000,%rsi # string to print
+   0x0000000000401015 <+21>:	mov    $0xe,%rdx # 0x0e = 14 = string length
+   0x000000000040101c <+28>:	syscall
+   0x000000000040101e <+30>:	mov    $0x3c,%rax # 0x3c = 60 = syscall exit
+   0x0000000000401025 <+37>:	xor    %rdi,%rdi # 0x00 = return value
+   0x0000000000401028 <+40>:	syscall
+
+
+
+
+(gdb) disass main
+Dump of assembler code for function main:
+   0x0804840c <+0>: push   %ebp
+   0x0804840d <+1>: mov    %esp,%ebp
+   0x0804840f <+3>: and    $0xfffffff0,%esp
+   0x08048412 <+6>: sub    $0x10,%esp
+   0x08048415 <+9>: movl   $0x80484c0,(%esp)
+   0x0804841c <+16>:    call   0x80482f0 <puts@plt>  # puts use value at $esp address
+   0x08048421 <+21>:    mov    $0x0,%eax
+   0x08048426 <+26>:    leave
+   0x08048427 <+27>:    ret
+End of assembler dump.
+
+Explication :
+0x08048000 is the default address on which ld starts the first PT_LOAD segment on Linux/x86.
+On Linux/amd64 the default is 0x400000 and you can change the default by using a custom linker script.
+You can also change where .text section starts with the -Wl,-Ttext,0xNNNNNNNN flag to gcc.
+To understand why .text is not mapped at address 0, keep in mind that the NULL pointer is usually mapped to ((void *) 0) for convenience.
+It is useful, then, that the zero page is mapped inaccessible to trap uses of NULL pointers. The memory before the start of .text is actually used by a lot of things; take cat /proc/self/maps as an example:
+
+
+====> execution d'un process
+
+1. Linux runs in RAMs
+     . scheduler CFS
+         . switch context sur INTERRUPTION !!!! indépendant du programme en cours
+              . get executing process memory from PTE !!!!!
+              . update all register : rPC, rSP, rBP : after translate address with PTE
+         . let CPU runs process for a time slice
+2. when ADD process : VIRTUAL MEMORY !!!!
+     . interruption : syscall execve("filename")
+     . buddy memory allocation dans le kernel
+          . PTE : page table entry, process number inside kernel
+     . load from disk to RAM
+           . address are translated with PTE
+
+example :
+
+CTRL + ALT + T -----(interrupt)----->execve("/bin/bash")
+
+----> bprm = kzalloc(sizeof(*bprm), ) # kernel memory allocation for PTE...
+----> file = do_open_executeat(fd, filename, flag) # filename = "/bin/bash"
+----> sched_exec()
+----> bprm->file = file
+----> bprm_mm_init(bprm)
+----> prepare_binprm(bprm)
+----> search_binary_handler(bprm)
+----> load_elf_binary() # quand le binaire est un elf, les addresses virtuelles sont traduites en adresse réelle avec la PTE
+---->
+---->
+
+
+
+
+===========> PTE, Virtual memory
+
+     Processor                      Translation : Page Table Entry in Kernel                    RAM
+  ld R3, 1024(R0)                           1024 = 2                                        @2 = 1456
+
+
+
+=====> Physical RAM
+        ---------------------------------------------
+linux :  memory for process : PTE, process id ....
+kernel
+        ---------------------------------------------
+
+
+
+
+
+
+       ------------------------------------------------
+Progam ELF : stack, heap, .so, .text, .bss
+
+       ------------------------------------------------
+
+### fetch–execute instruction cycle in a CPU : PC, MAR, MDR, IR
+
+Chapitre 7, p.212
+
+1. fetch–execute instruction cycle in a CPU
+2. address of the current instruction to be executed is identified by the value in the program counter register
+3. transfer that value into the memory address register
+
+example : LOAD
+(step 1) PC → MAR
+(step 2) MDR → IR # The instruction register will hold the instruction through the rest of the instruction cycle. It is the particular instruction in the IR that will control the particular steps that make up the remainder of the cycle.
+===> this was FETCH PART
+
+(step 3) IR[address] → MAR
+(step 4) MDR → A
+(step 5) PC + 1 → PC
+===> this was LOAD instruction
+
+
+
+
+#### Boot Process
+
+0. Chipset (northbridge and southbridge) both starts
+1. Chipset ----> POWER ON CPU  ## memory mapping in NORTHBRIDGE and CPU REAL MODE
+2. CPU EIP (ExtInstructionPointer) = 0xFFFFFFF0 : RESET VECTOR
+3. CPU --- JUMP ---> BIOS ## in flash memory mapped in NORTHBRIDGE
+=====> Now CPU is excuting BIOS
+4. BIOS --- POST (PowerOnSelfTest)
+5. BIOS ---- load ---> MBR at 0x7c00
+6. MBR --- load ---> GRUB (bootloader)
+7. GRUB --- load ---> KERNEL
+
+sudo cat /proc/iomem ## display ram memory mapping : 0000-000fffff : System ROM == BIOS
+
+
+1. UEFI reads GPT partition # uefi can access files system
+2. UEFI finds GRUB2 # grub2 est compilé comme un éxécutable uefi
+
+### UEFI
+
+UEFI est un programme sur la carte mère. Il se lance au démarrage et cherche une partition EFI (type de partition particulier) pour charger le bootloader ( \EFI\ubuntu\grubx64.efi ; sous linux /dev/sda2). On peut choisir de lancer le shell EFI au démarrage.
+
+https://papy-tux.legtux.org/doc1249/index.html
+
+
+#### GRUB
+ls /boot/efi/EFI/ubuntu/grubx64.efi
+sudo fdisk -l /dev/sdb
+sudo parted -l # partionnement du disque
+sudo dmidecode # BIOS info
+sudo blkid
+cat /boot/efi/EFI/ubuntu/grub.cfg
+
+
+#### Containers : container image = files on disk VS container = running process
+
+1. Normal linux program : rest and running states
+2. when REST, containers are files on disk ===> container image or repository (format = docker...)
+3. when start container, container ENGINE (docker) unpack required file and give them to LINUX kernel ===> running containers are linux processes
+
+OpenContainerInitiative (OCI) ====> Container Image Format Specification, which defines the on-disk format for container images as well as the meta-data
+
+Container Runtime Specification and a Reference Runtime Implementation called RunC ===> how CONTAINER ENGINES get CONTAINERS IMAGES and interact with LINUX KERNEL
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg ## public key docker download
+sudo ls -la /var/lib/docker/
+
+docker image ls # list image on computer
+docker network ls
+docker info
+docker inspect ubuntu
+sudo docker images
+docker pull ubuntu
+
+docker image rm 9140108b62dc
+docker container rm 20d131b74c81
+
+
+### ubuntu image
+docker run -i -t ubuntu /bin/bash
+cat /etc/os-release
+
+### Docker.
+
+https://www.adaltas.com/fr/2021/06/03/linux-overlay-filesystem-docker/ : docker utilise le système de fichier overlay pour créer des images et des conteneurs. Lorsqu’une image est téléchargée, ses couches sont situées dans le dossier /var/lib/docker/overlay2
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io : docker-ce = docker community edition
+Après installation, création des répertoires : /var/lib/docker && /var/lib/containerd
+du -hs ../docker/ : 244K (27 directories, 8 files) pas encore d'image
+
+sudo docker run hello-world
+
+
+
+### Drivers
+
+Driver manager
+NVIDIA Corporation: GF108M [GeForce GT 620M/630M/635M/640M LE]
+This device is using an alternative driver.
+xserver-xorg-video-nouveau(open-source)
+Version 1:1.0.16-1
+X.Org X Server -- Nouveau Display Driver
+
+
+### memory process
+https://medium.com/@holdengrissett/linux-101-how-to-hack-your-process-memory-2514a3d0778d
+https://manybutfinite.com/post/anatomy-of-a-program-in-memory/
+
+
+
+### Audio
+amixer set "Headphone Mic" unmute
+alsamixer
+sudo nano /etc/modprobe.d/alsa-base.conf ==> options snd-hda-intel model=aspire-headset-mic
+arecord -d 4 > Desktop/test.wav
+
+sudo apt-add-repository ppa:audio-recorder/ppa
+sudo apt-get install audio-recorder
+pavucontrol
+lspci | grep -i audio
+cat /proc/asound/pcm
+
+cat /proc/asound/card*/codec* | grep Codec
+
+http://doc.ubuntu-fr.org/audio
+https://askubuntu.com/questions/278503/no-sound-with-hda-intel-pch
+https://forums.linuxmint.com/viewtopic.php?t=284514
+https://www.kernel.org/doc/html/latest/sound/hd-audio/models.html
+http://doc.ubuntu-fr.org/audio_intel_hda
+http://eriklievaart.com/cheat/linux/applications/audio.html
+
+arecord -l
+
+TRRS jack linux aspire
+
+https://alsa.opensrc.org/Proc_asound_documentation#So_what_are_the_hardware_devices.3F
+arecord -f S16_LE -d 10 -r 16000 -c 2 --device="hw:0,0" /tmp/test-mic.wav
+aplay /tmp/test-mic.wav
+
+
+Headset Microphone
+amixer -c0 controls | grep -i mic
+
+https://unix.stackexchange.com/questions/349613/alsamixer-pulseaudio-choose-internal-mic-over-mic-jack : codec explaination
+
+cat /proc/asound/cards
+cat /proc/asound/card0/pcm0c/info
+cat /proc/asound/devices
+cat /proc/asound/card0/codec#0
+
+https://doc.ubuntu-fr.org/audio_intel_hda
+
+lspci | grep -i audio : modele de la carte son intel
+cat /proc/asound/pcm : modele du chipset realtek sur la carte son intel
+zless /usr/share/doc/alsa-base/driver/HD-Audio-Models.txt.gz : list des drivers pour differents chipsets
+
+
+### SANE
+https://artisan.karma-lab.net/installer-serveur-numerisation-sane
+
+
+### APT
+apt list --installed
+
+
+### SANE - scanimage
+scanimage -L
+grep "sane" /etc/services : port 6566
+cat /etc/default/saned
+cat /etc/sane.d/saned.conf
+
+
+scanimage --mode color --resolution 150 -d net:192.168.3.9:pixma:04A9176D_0D80D2 > mon_image
+
+scanimage -d "net:192.168.3.9:pixma" --format=png --output-file Desktop/test.png --progress
+scanimage -d "net:192.168.8.112:pixma" --format=png --output-file Desktop/test.png --progress
+
+
+1 page, mode couleur, format tiff, chargeur par défaut (flatbed = vitre du scanner)
+scanimage -d hpaio:/net/Officejet_6700?ip=192.168.1.39 --mode=color --format=tiff>test.tif
+
+pdfjam --outfile output.pdf --paper a4paper fiche_demande_32.pdf
+convert png.png -background white -density 72 -page a4 myoutput.pdf
+
+convert image.png -background white -alpha remove -alpha off white.png
+convert in.png -background white -alpha remove -flatten -alpha off out.png
+
+### Network
+ip route list
+ip neigh
+ip addr show
+arp -n
+
+
+### Video
+ffmpeg -ss 00:00:39 -i Stokes\'\ Law\ for\ Laminar\ Flow\ -\ A\ Level\ Physics.mp4 -t 00:00:05 -vcodec copy -acodec copy newfile.avi
+ffmpeg -i newfile.avi
+ffmpeg -i input_file.mp4 -vcodec copy -an output_file.avi
+ffmpeg -ss 00:00:00 -i balle-jbart.mp4 -t 00:00:03 -vcodec copy -acodec copy newfile.avi :)
+ffmpeg -i inputFile -vcodec copy -an -ss 00:00:40 -to 00:00:45 outputFile.avi
+
+
+### Sound Card
+You must turn on the sound support soundcore module.
+modinfo soundcore
+
+carte son intel pch (chipset c216 avec intel hda controller)
+
+simon@simon-Aspire-V3-571G:~$ cat /proc/asound/cards
+ 0 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0xb3a10000 irq 31
+ 1 [NVidia         ]: HDA-Intel - HDA NVidia
+                      HDA NVidia at 0xb3000000 irq 17
+
+simon@simon-Aspire-V3-571G:~$ ls -ld /proc/asound/card* | grep ^d
+dr-xr-xr-x  6 root root 0 May 17 17:18 /proc/asound/card0
+dr-xr-xr-x 15 root root 0 May 17 17:18 /proc/asound/card1
+
+
+simon@simon-Aspire-V3-571G:~$ lspci -v | grep -i audio
+00:1b.0 Audio device: Intel Corporation 7 Series/C216 Chipset Family High Definition Audio Controller (rev 04)
+	Subsystem: Acer Incorporated [ALI] 7 Series/C216 Chipset Family High Definition Audio Controller
+01:00.1 Audio device: NVIDIA Corporation GF108 High Definition Audio Controller (rev a1)
+	Subsystem: Acer Incorporated [ALI] GF108 High Definition Audio Controller
+
+
+Controller audio : chipset 7 Series/C216 (relié au cpu intel i5 par DMI 3 GEN) relié au codec realtek ALC269 par le controller intel HDA
+
+
+Node.js, TypeScript, PostgreSQL, and S3. In Node.js I'd recommend TypeORM.
+
+
+# Lien entre glibc et le kernel
+http://linuxdocs.org/HOWTOs/Kernel-HOWTO.html
+https://stackoverflow.com/questions/42633927/how-does-glibcs-write-work/42635031
+https://libc-alpha.sourceware.narkive.com/Zn2a1uUx/write-and-libc-write
+
+- write syscall is implemented in the kernel : https://github.com/torvalds/linux/blob/96d4f267e40f9509e8a66e2b39e8b95655617693/fs/read_write.c#L607
+    ksys_write
+    vfs_write
+    rw_verify_area
+- glibc uses write syscall
+    ls glibc/sysdeps/unix/sysv/linux/x86_64/syscall.S
+
+nano glibc/manual/maint.texi
+nano glibc/sysdeps/unix/make-syscalls.sh
+
+la glibc est compilée avec gcc
+
+la glibc contient des appels systèmes
+
+les appels systèmes sont implémentés en C par le kernel linux
+
+tout est compilé par gcc en langage machine
+
+
+
+LINKER SCRIPT
+la compilation avant linkage produit des object files contenant des sections (data, bss, text)
+
+les sections sont linkées (combinées) ensemble grâce au linker script par le linker
+
+https://sourceware.org/binutils/docs-2.27/ld/Basic-Script-Concepts.html#Basic-Script-Concepts
+
+

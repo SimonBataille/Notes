@@ -1,0 +1,31 @@
+https://www.howtogeek.com/442101/how-to-move-your-linux-home-directory-to-another-hard-drive/
+
+- GPT :
+on crée une partition sur le disque hdd "/dev/sda8" => permet un accès aux différentes parties du disque physique par l'OS
+
+- gparted/fdisk :
+on crée un système de fichiers sur la partition "/dev/sda8" pour organiser l'accès aux fichiers par l'OS
+
+- mount /dev/sda8 /mnt
+la première fois seulement : on monte la nouvelle partition hdd "/dev/sda8" sur /mnt
+
+- cp -r /home /mnt 
+la première fois seulement : on copie les fichiers du /home du ssd sur la partition hdd via /mnt
+
+- mv /home /home.orig
+on sauvegarde la partition /home d'origine du ssd
+
+- mkdir /home
+on recrée un répertoire /home sur le ssd
+
+
+# LORS D'UN REINSTALL
+- sudo mv /home /home.origin
+
+- sudo mkdir /home
+
+- sudo mount /dev/sda8 /home/
+
+- sudo cp /etc/fstab /etc/fstab.orig 
+
+- sudo echo "/dev/sda8	/home	ext4	defaults	0	0" > /etc/fstab
