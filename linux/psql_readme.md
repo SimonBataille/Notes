@@ -188,12 +188,12 @@ sudo apt install pgadmin4
 
 ### Install for web mode only:  
   
-  sudo apt install pgadmin4-web
+    sudo apt install pgadmin4-web
 
 ### Configure the webserver, if you installed pgadmin4-web:
 
-  sudo /usr/pgadmin4/bin/setup-web.sh
-  sudo PGADMIN_PLATFORM_TYPE=debian /usr/pgadmin4/bin/setup-web.sh
+    sudo /usr/pgadmin4/bin/setup-web.sh
+    sudo PGADMIN_PLATFORM_TYPE=debian /usr/pgadmin4/bin/setup-web.sh
 
 
 ### Add PostgreSQL Server to pgAdmin
