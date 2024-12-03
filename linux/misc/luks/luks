@@ -1,0 +1,45 @@
+sudo dd if=/dev/sdc bs=512 count=2048 | hexdump -C | less
+sudo hd -n 2048 /dev/sdc
+
+https://www.val-r.fr/geek/os/linux/creer-et-utiliser-une-partition-chiffree-avec-luks-sous-linux/#Creer_une_partition_chiffree_avec_LUKS
+
+sudo umount /dev/sdc2
+lsblk
+sudo umount /dev/sdc1
+lsblk
+cryptsetup --verbose luksFormat --verify-passphrase /dev/sdc2
+sudo cryptsetup --verbose luksFormat --verify-passphrase /dev/sdc2
+cryptsetup -v luksOpen /dev/sdc2 monVolume
+sudo cryptsetup -v luksOpen /dev/sdc2 monVolume
+lsblk
+ls /dev/mapper/monVolume
+mke2fs -t ext4 -L monVolume /dev/mapper/monVolume
+sudo mke2fs -t ext4 -L monVolume /dev/mapper/monVolume
+ls /dev/mapper/monVolume
+mkdir /mnt/monVolume
+sudo mkdir /mnt/monVolume
+ls /mnt
+mount -v /dev/mapper/monVolume /mnt/monVolume
+sudo mount -v /dev/mapper/monVolume /mnt/monVolume
+lsblk
+cd /mnt/monVolume/
+ls
+mkdir Tahiti
+sudo mkdir Tahiti
+lsblk
+ls
+ll
+sudo freefilesync 
+
+
+Démontrer puis fermer la partition chiffrée
+# Démontage du mapper
+umount -v /dev/mapper/monVolume
+# ou
+umount -v /mnt/monVolume 
+
+#Fermer la partition chiffrée
+cryptsetup -v luksClose monVolume
+
+
+

@@ -1,0 +1,57 @@
+- List partitions
+(Windows Management Instrumentation)
+wmic logicaldisk get name
+wmic logicaldisk get caption
+wmic logicaldisk get deviceid, volumename, description
+
+fsutil fsinfo drives
+
+diskpart
+list volume
+
+powershell
+get-psdrive -psprovider filesystem
+
+
+- boot menu entry sur LINUX : (https://enrootmauvaisetroupe.fr/index.php/2020/10/07/ubuntu-double-boot-mettre-windows-en-premier-en-cli/)
+sudo grep menuentry /boot/grub/grub.cfg
+    menuentry 'Windows Boot Manager (on /dev/sda2)'
+
+sudo nano /etc/default/grub
+GRUB_DEFAULT='Windows Boot Manager (sur /dev/sda1)'
+
+
+
+BOOT WINDOWS
+https://www.intel.com/content/dam/support/us/en/documents/motherboards/server/sb/efi_instructions.pdf : efi instructions on intel motherboard
+
+https://www.malekal.com/la-partition-efi-ou-esp/
+
+https://www.malekal.com/partition-de-recuperation-windows10/
+
+https://www.diskpart.com/fr/articles/partition-systeme-efi.html
+
+https://www.malekal.com/bios-role-et-fonctionnement/
+
+https://wiki.ubuntu.com/UEFI/SecureBoot/Testing
+
+### MBR vs. GPT
+
+Tous les disques commencent par une table de partition (MBR ou GPT le plus souvent)
+Dans fdisk dos = MBR
+
+
+sur NEC : fdisk /dev/sda -> p
+
+sda1 = windows recovery
+sda2 = EFI
+sda3 = microsoft reserved
+sda4 = microsoft basic data
+sda5 = Linux filesystem
+
+https://lecrabeinfo.net/differences-mbr-gpt-tables-de-partitionnement.html
+
+
+**** Formater une clé en FAT32 win95 LBA pour macos
+https://askubuntu.com/questions/1064278/how-to-create-win95-fat32-lba-partition-type-on-32-gb-usb
+

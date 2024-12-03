@@ -1,0 +1,11 @@
+- Ouvrir la partition chiffrée
+sudo cryptsetup -v open /dev/sdb monVolume
+
+- Monter la partition chiffrée
+sudo mount -v /dev/mapper/monVolume /mnt/monVolume/
+
+- Démonter la partition chiffrée
+sudo umount -v /dev/mapper/monVolume
+
+- Fermer la partition chiffrée
+sudo cryptsetup -v close monVolume

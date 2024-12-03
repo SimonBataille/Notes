@@ -1,0 +1,23 @@
+# DOCKER
+docker images
+docker build .
+docker tag 8fdcdbc89251 simon/alpineiptables:1.0
+
+docker run --cap-add=NET_ADMIN --cap-add=NET_RAW -it simon/alpineiptables:1.0 /bin/sh
+
+
+# IPTABLES
+iptables -L --line-numbers
+sudo iptables -S -t nat
+sudo iptables -S -t filter
+
+## On Docker contaainer
+iptables -I INPUT -p icmp --icmp-type 8 -j DROP : create rule
+iptables -D INPUT 1 : delete rule
+
+## On Host
+
+
+# BRIDGE
+sudo brctl show
+sudo brctl showmacs docker0 : show mac address tables on bridge

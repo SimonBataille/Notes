@@ -1,0 +1,88 @@
+https://takacsmark.com/docker-swarm-tutorial-for-beginners/
+
+
+# Terminologie Swarm
+- node : une autre machine, un autre host avec un docker qui tourne dedans pour lancer des containers
+- task : décrit les différents services utilisés dans l'application (i.e. serveur/bdd) comme dans un composefile
+- service : correspond à un container
+
+
+# Docker in docker
+- pour créer un container avec docker dedans 
+    => permet de simuler un host différent sur la même machine
+    => on pourra utiliser ce container pour déployer des réplicas
+    => c'est comme avoir un autre node pour swarm 
+
+- docker run --privileged -d --name dind-test docker:dind
+- docker exec -it dind-test /bin/sh
+
+# Workflow
+## 1. Lancer swarm sur l'hôte
+- docker swarm init
+     Swarm initialized: current node (w38oc7h508hsbsoit9o2h6gzg) is now a manager.
+     To add a worker to this swarm, run the following command:
+     docker swarm join --token SWMTKN-1-15wcax4635a2u7r8gs7arpo3g3cfkh6s30lfdquefzjanz7g5k-5svm117vp8u5rmo2szaaq7tsi 192.168.8.17:2377
+
+## 2. Lancer dind pour simuler un autre node dans le cluster
+- docker run --privileged -d --name dind-test docker:dind
+- docker exec -it dind-test /bin/sh
+
+- dans le shell de dind-test 
+   => docker swarm join --token SWMTKN-1-15wcax4635a2u7r8gs7arpo3g3cfkh6s30lfdquefzjanz7g5k-5svm117vp8u5rmo2szaaq7tsi 192.168.8.17:2377
+   => This node joined a swarm as a worker.
+
+## 3. Deployer la stack sur l'hôte
+- docker stack deploy nodeapp -c docker-compose.yml
+
+## 4. Ajouter un service pour le visualizer
+- docker service create \
+  -p 8080:8080 \
+  --constraint=node.role==manager \
+  --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+  dockersamples/visualizer 
+
+- docker exec -it 3ebd5d2075d1 /bin/sh : shell dans le container du visualizer pour connaitre son adresse ip
+     - ip addr show
+     - dans le browser de la machine hôte : 172.18.0.4:8080
+
+## 5. Scaler le service dans tout le cluster (i.e les deux nodes)
+- docker service ls
+- docker service scale nodeapp_web=4
+- curl 192.168.8.17
+
+## 6. Tout éteindre
+- docker service scale nodeapp_web=1
+
+- docker node update --availability drain m3209irrf228ieel39cmvwjaf : drain le node simuler par dind
+- sur dind : 
+     - docker swarm leave
+- docker stop/rm dind-test
+
+- supprimer le service du visualizer : docker service rm dockersamples/visualizer
+
+- supprimer la stack actuelle 
+    - docker stack ls
+    - docker stack rm nodeapp
+
+- quitter le swarm mode
+    - docker swarm leave --force
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

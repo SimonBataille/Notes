@@ -1,0 +1,136 @@
+# MINIKUBE
+## Installation minikube
+
+C'est un fichier executable dans "/usr/local/bin/minikube".
+
+Sur l'HÔTE, il y'a une image docker installée :
+	- docker image ls => cr.io/k8s-minikube/kicbase       v0.0.40     c6cc01e60919   3 months ago   1.19GB
+        - la commande minikube start lance cette image sur l'HÔTE cela correspond à l'environement minikube qui est en fait un container docker
+  	- l'entry pont de ce container "/usr/local/bin/entrypoint /sbin/init" => lance l'init systemd contenant entre autre le lancement des containers docker nécessaires pour simuler k8s
+	- sur l'HÔTE (br docker 192.168.49.1) : minikube ssh
+        - sur le container minikube : ip addr show  => 192.168.49.2
+
+## Running minikube
+
+- on lance minikube avec minikube start
+- sur l'HÔTE linux cela run un container dont l'image est : "gcr.io/k8s-minikube/kicbase:v0.0.40" 
+- au niveau réseau
+    - il y a le LAN des pods dans le cluster
+    - il y a le LAN sur lequel les pods et le cluster est acessible sur la machine "HÔTE"
+        - ex : ma machine est en 192.168.8.17 (box viti)
+               j'ai un bridge docker en 192.168.49.1 sur lequel le cluster et ses services sont accessibles depuis l'HÔTE 
+               certains pods ont une ip en 192.168.49.2
+
+- le container docker minikube est le node control-plane du cluster kubernetes 
+ 	- kubectl get node
+ 	
+- si je lance un service hello-world avec minikube, l'image est accssible dans le container docker minikube => c'est le container minikube qui contient le container de l'image docker hello-world
+	- kubectl run test --restart=Never --image=hello-world -it
+
+
+
+## Commands minikube
+
+alias kubectl="minikube kubectl --" => on utiliser le kubctl fourni par minikube
+
+minikube service list => liste les pods lancés dans le clusters minikube et les adresses IPs de l' "HÔTE" sur lesquelles les pods sont accessibles
+
+minikube delete => supprime les données du cluster (Removing /home/simon/.minikube/machines/minikube ...)
+
+## dashboard
+minikube dashboard
+	- lance le container dashboard qui est un container lancé à l'intérieur du container minikube
+	- pour voir les logs => docker@minikube:~$ docker logs  k8s_kubernetes-dashboard_kubernetes-dashboard-5c5cfc8747-4frt6_kubernetes-dashboard_5626a2d8-97c3-434a-86c7-0fe5d0fcf448_0
+
+
+# KUBCTL
+## What
+on utilise le kubctl fourni par minikube pour interroger le container kub-ctl-plane qui s'exécute dans le container minikube (mise en abîme) 
+
+## helloworld
+kubectl run test --restart=Never --image=hello-world -it 
+	=> cela a téléchargé l'image hello-world dans le container de l'image de minikube sur l'HÔTE (le container contient l'image hello-world en plus des autres images nécessaires pour la simulation de k8s)
+	=> docker@minikube:~$ docker image ls
+REPOSITORY                                      TAG       IMAGE ID       CREATED         SIZE
+registry.k8s.io/metrics-server/metrics-server   <none>    a608c686bac9   3 months ago    68.9MB
+registry.k8s.io/kube-apiserver                  v1.27.4   e7972205b661   3 months ago    121MB
+registry.k8s.io/kube-scheduler                  v1.27.4   98ef2570f3cd   3 months ago    58.4MB
+registry.k8s.io/kube-proxy                      v1.27.4   6848d7eda034   3 months ago    71.1MB
+registry.k8s.io/kube-controller-manager         v1.27.4   f466468864b7   3 months ago    113MB
+hello-world                                     latest    9c7a54a9a43c   5 months ago    13.3kB <----------------------------------------XXXXXXXXX
+registry.k8s.io/coredns/coredns                 v1.10.1   ead0a4a53df8   8 months ago    53.6MB
+registry.k8s.io/etcd                            3.5.7-0   86b6af7dd652   9 months ago    296MB
+registry.k8s.io/pause                           3.9       e6f181688397   12 months ago   744kB
+kubernetesui/dashboard                          <none>    07655ddf2eeb   13 months ago   246MB
+kubernetesui/metrics-scraper                    <none>    115053965e86   17 months ago   43.8MB
+gcr.io/k8s-minikube/storage-provisioner         v5        6e38f40d628d   2 years ago     31.5MB
+
+
+
+## Kubctl pods/deployment
+
+- je peux accéder au shell d'un pod/deployment => kubectl exec -it fibonacci-backend-deployment-f668f5675-rgwp4 -- bash
+- une fois sur le shell du pod je peux accéder au serveur => curl localhost:5000/fibonacci?n=8
+                                                          => cat /etc/hosts pour l'adresse ip
+
+- tous les objets qui tourne sur le node k8s => kubectl get all
+
+## Arreter proprement le cluster 
+
+- Arrêtez les déploiements et pods => kubectl delete deployment --all
+- Arrêtez les services => kubectl delete services --all
+
+
+## Redirection de port 80
+
+- kubectl expose deployment hello-world --type=NodePort --port=80 --name=hello-world 
+	=> Le port 80 que vous voyez se réfère au port du service à l'intérieur de votre cluster Kubernetes. Le service "hello-world" écoute sur le port 80 à l'intérieur du cluster, mais Minikube redirige les demandes vers un port aléatoire sur l'hôte pour éviter les conflits avec d'autres services ou applications qui utilisent déjà le port 80 sur votre ordinateur local. http://192.168.49.2:32703
+	=> Quand on va sur http://192.168.49.2:32703 (HÔTE) minikube nous redirige vers le port 80 du cluster
+	=> la règle de redirection du port dans le iptables de minikube (redirection dans le cluster)
+
+docker@minikube:~$ sudo iptables -t nat -S | grep 80 | grep nginx
+-A KUBE-SEP-LZKFXZPCE34QMYVR -p tcp -m comment --comment "default/hello-world-nginx" -m tcp -j DNAT --to-destination 10.244.0.8:80
+-A KUBE-SERVICES -d 10.104.214.193/32 -p tcp -m comment --comment "default/hello-world-nginx cluster IP" -m tcp --dport 80 -j KUBE-SVC-4BG72YFGY7GLGAA6
+-A KUBE-SVC-4BG72YFGY7GLGAA6 ! -s 10.244.0.0/16 -d 10.104.214.193/32 -p tcp -m comment --comment "default/hello-world-nginx cluster IP" -m tcp --dport 80 -j KUBE-MARK-MASQ
+-A KUBE-SVC-4BG72YFGY7GLGAA6 -m comment --comment "default/hello-world-nginx -> 10.244.0.8:80" -j KUBE-SEP-LZKFXZPCE34QMYVR
+
+- il y'a le port 80 dans le cluster créé par minikube et minikube expose le service sur un port de la machine HÔTE
+
+## Deployment vs service
+
+- deployment permet de gérer les versions d'un même pod/container
+- service permet d'attribuer une IP à un pod/container => si le pods crash alors le pod créé en remplacement reprend l'IP du service ! Le service a toujous la même IP et il repère le nouveau pod créé pour rediriger le traffic vers lui
+
+
+## Dowload de l'image docker
+- kubectl apply -f backend-pod.yaml => docker telecharge oshokry/fibonacci-backend depuis docker hub sur le container minikube
+
+docker@minikube:~$ docker image ls
+REPOSITORY                                      TAG       IMAGE ID       CREATED         SIZE
+silurusattahiti/hello-world-nginx               1.0       aa2a00b4e019   2 hours ago     187MB
+registry.k8s.io/metrics-server/metrics-server   <none>    a608c686bac9   3 months ago    68.9MB
+registry.k8s.io/kube-apiserver                  v1.27.4   e7972205b661   3 months ago    121MB
+registry.k8s.io/kube-proxy                      v1.27.4   6848d7eda034   3 months ago    71.1MB
+registry.k8s.io/kube-scheduler                  v1.27.4   98ef2570f3cd   3 months ago    58.4MB
+registry.k8s.io/kube-controller-manager         v1.27.4   f466468864b7   3 months ago    113MB
+oshokry/fibonacci-backend                       latest    755831193797   4 months ago    475MB <-----------------------XXXXXXXXXXXX
+hello-world                                     latest    9c7a54a9a43c   5 months ago    13.3kB
+registry.k8s.io/coredns/coredns                 v1.10.1   ead0a4a53df8   8 months ago    53.6MB
+registry.k8s.io/etcd                            3.5.7-0   86b6af7dd652   9 months ago    296MB
+registry.k8s.io/pause                           3.9       e6f181688397   12 months ago   744kB
+kubernetesui/dashboard                          <none>    07655ddf2eeb   13 months ago   246MB
+kubernetesui/metrics-scraper                    <none>    115053965e86   17 months ago   43.8MB
+gcr.io/k8s-minikube/storage-provisioner         v5        6e38f40d628d   2 years ago     31.5MB
+
+## Service Pod
+- kubectl expose pod fibonacci-backend-pod --port 5000 --type NodePort => j'expose le service pour qu'il ait une IP accessible sur l'HÔTE
+- minikube service list => http://192.168.49.2:30859 => port 30859 sur l'HÔTE et 5000 à l'intérieur du cluster
+- kubectl delete svc fibonacci-backend-pod => delete le service (port sur l'HÔTE)
+- kubectl delete pod fibonacci-backend-pod => delete le pod (port dans le cluster)
+
+
+
+
+
+
+

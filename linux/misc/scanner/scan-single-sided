@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+# paramétres 
+#target_name="$1"  # Nom du fichier final
+#page_count="$2" # optionnel, le nombre de feuilles à numériser
+
+# create a temporary directory within /tmp
+DIR=`mktemp -d`
+CUR=$PWD
+cd $DIR
+
+
+# utilisation de scanimage pour déterminer l'adresse de notre scanner
+scanner_usb_id=$( scanimage -L | grep pixma | cut -d "\`" -f2 | cut -d"'" -f1)
+
+
+# options de numérisation par défaut
+scanimage_options="--mode color --resolution 150 -d $scanner_usb_id"
+
+
+#scanimage -b --format png  -d 'fujitsu:ScanSnap S1500:2314' --source 'ADF Front' --resolution 150
+#scanimage $scanimage_options --batch="$target_name %d"  --batch-count $page_count --batch-prompt
+scanimage $scanimage_options -b --format png
+
+#convert quittance_nov_dec.pdf -background white -density 72 -page a4 myoutput.pdf
+
+convert *.png $CUR/$1

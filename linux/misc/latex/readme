@@ -1,0 +1,47 @@
+texdoc moderncv
+texdoc texlive-fr
+texdoc moderncv
+whereis texdoc
+texdoc lshort-fr
+texdoc texlive-fr
+texdoc latex2e-fr
+file /usr/bin/texdoc
+ls /usr/share/texlive/texmf-dist/scripts/texdoc/texdoc.tlu
+file /usr/share/texlive/texmf-dist/scripts/texdoc/texdoc.tlu
+texdoc texlive-fr
+texdoc texdoc
+
+texdoc texlive-fr
+texdoc latex
+latex bonjour.tex 
+lualatex --version
+lualatex --help
+lualatex bonjour.tex 
+lualatex bonjour.tex 
+pdflatex bonjour.tex
+pdflatex cv.tex 
+pdflatex cv.tex 
+texdoc latex2e-fr
+whereis pdflatex
+mkdir cv_latex
+cd cv_latex/
+pdflatex
+
+
+### Maintenace de l'installation tlmgr
+texdoc texlive-fr ### 6 Maintenance de l’installation avec tlmgr
+tlmgr -gui
+
+
+### Class moderncv
+texdoc texlive-fr ### 2.3 description des arborescence
+tlmgr conf ### configuration de texlive ==> TEXMFDIST=/usr/share/texlive/texmf-dist
+ls /usr/share/texlive/texmf-dist
+find . -iname "*moderncv*"
+ll /usr/share/texlive/texmf-dist/tex/latex/moderncv/
+
+
+### List none source files
+ls -I "*.tex" -I "*.png" | xargs -p rm
+ll -I "*.tex" -I "*.png"
+

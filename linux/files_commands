@@ -1,0 +1,94 @@
+### US Letter to A4 gs conv
+
+gs -sDEVICE=pdfwrite -sPAPERSIZE=a5 -dFIXEDMEDIA -dPDFFitPage -dCompatibilityLevel=1.4 -o out.pdf in.pdf
+gs -sDEVICE=pdfwrite -sPAPERSIZE=a4 -dFIXEDMEDIA -dPDFFitPage -dCompatibilityLevel=1.4 -dDEVICEHEIGHTPOINTS=595  -dDEVICEWIDTHPOINTS=842  -dAutoRotatePages=/None -o out.pdf convocation.pdf
+
+
+### Merge pdf
+gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=combine.pdf -dBATCH 1.pdf 2.pdf
+
+
+### Extract page from pdf
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=5 -dLastPage=5 -sOutputFile=outfile_p4.pdf ad1-interactions.pdf
+
+
+### Rotate
+qpdf combine.pdf out.pdf --rotate=270:1-2
+
+### Reduce pdf size
+gs \
+  -o out300.png \
+  -sDEVICE=pngalpha \
+  -r300 \
+   input.pdf
+
+gs -o out300.pdf -sDEVICE=pdfalpha -r300 input.pdf
+
+### merge pdf
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged_file.pdf dossier_AA_1.pdf dossier_AA_2.pdf dossier_AA_3.pdf carte_identite_recto.pdf carte_identite_verso.pdf cv_simon_bataille.pdf
+
+
+### reduce pdf size
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf :(
+
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default \
+    -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages \
+    -dCompressFonts=true -r150 -sOutputFile=output.pdf input.pdf
+
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=output.pdf input.pdf :)
+
+### delete pdf pages
+gs -sPageList=1,2 -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dSAFER  -sOutputFile=myPDF_out.pdf  Facture\ SOCODIME\ du\ 22102020.pdf
+
+### extract
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER \
+       -dFirstPage=22 -dLastPage=36 \
+       -sOutputFile=outfile_p22-p36.pdf 100p-inputfile.pdf
+
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=22 -dLastPage=36 -sOutputFile=outfile_p22-p36.pdf 100p-inputfile.pdf
+
+
+### pdfinfo
+
+pdfinfo file.pdf
+
+
+### Resize pdf A4
+gs -sDEVICE=pdfwrite -sPAPERSIZE=a4 -dFIXEDMEDIA -dPDFFitPage -dCompatibilityLevel=1.4 -o out.pdf Noyau\ de\ l\'atome_eleve.pdf
+
+
+### Split pdf two pages per sheet
+pdfjam --nup 2x1 ~/Desktop/output.pdf --outfile out.pdf --landscape --paper a4paper
+pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --paper a4paper --outfile Page1+2.pdf
+
+
+### resize jpg
+convert  -resize 80% atom_fer.jpeg dest.jpg
+
+### Rotate side pdf
+pdftk Scanned\ Document.pdf cat 1down 2 3down 4 output out.pdf
+pdftk A=out.pdf shuffle Aodddown Aeven output MyRotatedFile.pdf
+pdftk output.pdf cat 1-2 4-end output out.pdf
+
+pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf
+
+
+### sort files
+find . ! -path . -mmin -15 -exec ls {} \;
+
+find * -mmin -15 -exec ls {} \;
+
+find * -maxdepth 0 -type f   \( ! -iname "*.md" \) -exec ls {} \;
+find * -maxdepth 0 -type f   \( ! -iname "*.md" \) -exec cp {} simon_template \;
+find * -type f \( ! -iname "*.md" \) -exec cp {} simon_template \;
+
+
+### List none source files
+ls -I "*.tex" -I "*.png" | xargs -p rm
+ll -I "*.tex" -I "*.png"
+
+
+### grep
+grep -lr "let contents" . | xargs head
+
+
