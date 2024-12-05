@@ -158,34 +158,32 @@ def test_afficher_liste(mocker):
     sys.stdout = sys.__stdout__ => on remet le retour dans la console 
     expected_value = "['1', '3', '5', '6']"
     assert expected_value in output => on vérifie que output contient les values attedues
- ```   
+```
 
 ## G. pyenv
 ### G.0. Résumé
-
-    - Le système peut gérer une seule version de Python par défaut.
-    - Pyenv permet de gérer plusieurs versions de Python et d'utiliser des environnements virtuels pour les projets.
-    - Utiliser Pyenv et ses environnements virtuels permet d'assurer une isolation complète des dépendances et des versions, ce qui est crucial pour le développement de projets en Python.
+- Le système peut gérer une seule version de Python par défaut.
+- Pyenv permet de gérer plusieurs versions de Python et d'utiliser des environnements virtuels pour les projets.
+- Utiliser Pyenv et ses environnements virtuels permet d'assurer une isolation complète des dépendances et des versions, ce qui est crucial pour le développement de projets en Python.
 
 ### G.1.Résumé :
-
-    - Pyenv modifie les symlinks pour pip dans le répertoire ~/.pyenv/shims, de la même manière qu'il le fait pour python.
-    - Chaque version de Python installée avec Pyenv a son propre pip, et Pyenv gère les symlinks pour que tu utilises toujours le bon pip pour la version de Python que tu as choisie.
-    - Cela permet une gestion cohérente des packages Python à travers différentes versions, tout en gardant l'environnement global du système intact.
+- Pyenv modifie les symlinks pour pip dans le répertoire ~/.pyenv/shims, de la même manière qu'il le fait pour python.
+- Chaque version de Python installée avec Pyenv a son propre pip, et Pyenv gère les symlinks pour que tu utilises toujours le bon pip pour la version de Python que tu as choisie.
+- Cela permet une gestion cohérente des packages Python à travers différentes versions, tout en gardant l'environnement global du système intact.
 
 ### G.2. Dépendance de pyenv virtualenv sur python3.11-venv
 
-    1. Installation de Python via Pyenv :
-        Lorsque tu exécutes pyenv install 3.11.0, Pyenv télécharge et compile la version 3.11.0 de Python, et cette installation comprend toutes les fonctionnalités standard de Python, y compris le module venv, qui est utilisé pour créer des environnements virtuels.
-        Les fichiers de cette version de Python sont installés dans ~/.pyenv/versions/3.11.0/.
+1. Installation de Python via Pyenv :
+- Lorsque tu exécutes pyenv install 3.11.0, Pyenv télécharge et compile la version 3.11.0 de Python, et cette installation comprend toutes les fonctionnalités standard de Python, y compris le module venv, qui est utilisé pour créer des environnements virtuels.
+- Les fichiers de cette version de Python sont installés dans ~/.pyenv/versions/3.11.0/.
 
-    2. Création d’un Environnement Virtuel :
-        Lorsque tu utilises la commande pyenv virtualenv 3.11.0 mon_projet, Pyenv s’appuie sur la version de Python que tu as installée (dans ce cas, 3.11.0).
-        Pyenv utilise le module venv de Python pour créer l'environnement virtuel, ce qui signifie que la création de l'environnement virtuel dépend de la version de Python que tu as installée avec Pyenv.
+2. Création d’un Environnement Virtuel :
+- Lorsque tu utilises la commande pyenv virtualenv 3.11.0 mon_projet, Pyenv s’appuie sur la version de Python que tu as installée (dans ce cas, 3.11.0).
+- Pyenv utilise le module venv de Python pour créer l'environnement virtuel, ce qui signifie que la création de l'environnement virtuel dépend de la version de Python que tu as installée avec Pyenv.
 
-    3. Pas de Dépendance Externe :
-        Il n’est pas nécessaire d’installer un package distinct tel que python3.11-venv via le gestionnaire de paquets de ton système, car la version de Python que tu installes avec Pyenv contient déjà le module venv.
-        Pyenv gère tout cela en interne, et tu n'as pas à te soucier de conflits avec les installations de Python du système.
+3. Pas de Dépendance Externe :
+- Il n’est pas nécessaire d’installer un package distinct tel que python3.11-venv via le gestionnaire de paquets de ton système, car la version de Python que tu installes avec Pyenv contient déjà le module venv.
+- Pyenv gère tout cela en interne, et tu n'as pas à te soucier de conflits avec les installations de Python du système.
 
 ## H. Anaconda
 ### H.1. Anaconda on linux
