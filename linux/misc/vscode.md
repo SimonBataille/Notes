@@ -20,3 +20,5 @@ grep: /home/simon/.config/Code/User/globalStorage/state.vscdb : fichiers binaire
 
 # Extensions
 - Le debbugger python est installé dans les extensions
+
+            (.venv) (base) simon@simon-HP-EliteBook-735-G6:~/Documents/Geek/Python/Vscode$  cd /home/simon/Documents/Geek/Python/Vscode ; /usr/bin/env /home/simon/Documents/Geek/Python/Vscode/.venv/bin/python /home/simon/.vscode/extensions/ms-python.debugpy-2024.12.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 54091 -- /home/simon/Documents/Geek/Python/Vscode/main.py 
