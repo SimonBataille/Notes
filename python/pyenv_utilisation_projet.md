@@ -4,7 +4,8 @@
 ## Configuration Actuelle
 Dans ta configuration, où tu exécutes manuellement les commandes :
 ```bash
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
@@ -73,7 +74,8 @@ Cela affichera la version active (par exemple, `3.9.7`) et son origine (globale 
 ## 4. Ton Cas : `pyenv` Modifie Uniquement le Shell Actuel
 Oui, avec ta configuration où tu exécutes manuellement :
 ```bash
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
