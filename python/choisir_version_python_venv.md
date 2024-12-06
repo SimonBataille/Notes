@@ -40,7 +40,8 @@ Si tu veux installer et gérer plusieurs versions de Python facilement, utilise 
 **Installer et configurer `pyenv` :**
 ```bash
 curl https://pyenv.run | bash
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
