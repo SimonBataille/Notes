@@ -1,0 +1,26 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: 
+2048bitsofdata_____________________________________________________________________________
+    server: https://34.72.185.150
+  name: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+contexts:
+- context:
+    cluster: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+    user: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+  name: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+current-context: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+kind: Config
+preferences: {}
+users:
+- name: gke_erudite-scanner-444011-u6_us-central1_autopilot-cluster-1
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --use_application_default_credentials
+      command: gke-gcloud-auth-plugin
+      installHint: Install gke-gcloud-auth-plugin for use with kubectl by following
+        https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#install_plugin
+      provideClusterInfo: true
