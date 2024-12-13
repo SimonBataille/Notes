@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:alpine  # Image officielle PostgreSQL (basée sur Alpine)
+    container_name: postgres-container
+    environment:
+      POSTGRES_USER: myuser       # Utilisateur PostgreSQL
+      POSTGRES_PASSWORD: mypassword  # Mot de passe de l'utilisateur
+      POSTGRES_DB: mydatabase     # Base de données par défaut
+    ports:
+      - "5432:5432"  # Mappage du port 5432 du conteneur vers votre machine locale
+    networks:
+      - mynetwork
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # Volume pour persistance des données
+
+  python-app:
+    build: ./app  # Build de l'image à partir du Dockerfile dans le dossier `app`
+    container_name: python-app
+    depends_on:
+      - postgres  # Assure que le service PostgreSQL démarre avant l'application Python
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: mydatabase
+      DB_USER: myuser
+      DB_PASSWORD: mypassword
+    networks:
+      - mynetwork
+    volumes:
+      - ./app:/app  # Montée du volume pour le code Python
+    command: python /app/main.py  # Commande pour exécuter le script Python
+
+networks:
+  mynetwork:
+    driver: bridge  # Réseau Docker interne pour la communication entre les services
+
+volumes:
+  postgres-data:
+    driver: local  # Volume Docker pour persister les données de PostgreSQL

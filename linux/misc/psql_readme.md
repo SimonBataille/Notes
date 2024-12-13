@@ -223,3 +223,46 @@ conf-available/pgadmin4.conf:5:    WSGIProcessGroup pgadmin
 apache2.conf:13:# order to make automating the changes and administering the server as easy as
 ```
 
+# 6. Tables internes
+Les **tables internes de PostgreSQL** (celles qui gèrent la configuration et les métadonnées) sont stockées dans un schéma spécial appelé **`pg_catalog`**. Voici un aperçu de leur organisation :
+
+### 1. **`pg_catalog` : Le schéma des métadonnées**
+   - **`pg_catalog`** est un schéma système dans PostgreSQL qui contient des tables et des vues utilisées pour gérer la base de données elle-même.
+   - Ce schéma est automatiquement créé lors de l'installation de PostgreSQL, et il contient des informations essentielles pour le bon fonctionnement du serveur PostgreSQL.
+
+### 2. **Tables internes de `pg_catalog`**
+   Voici quelques tables et vues importantes présentes dans `pg_catalog` :
+
+   - **`pg_class`** : Contient les informations sur les objets de la base de données (tables, index, séquences, etc.). Cette table contient des métadonnées essentielles pour chaque objet dans la base de données.
+   - **`pg_attribute`** : Contient les informations sur les colonnes de toutes les tables dans la base de données.
+   - **`pg_database`** : Contient les informations sur les bases de données dans un serveur PostgreSQL.
+   - **`pg_user`** : Contient des informations sur les rôles utilisateurs et leurs privilèges.
+   - **`pg_roles`** : Contient des informations détaillées sur les rôles, incluant des rôles utilisateur, des groupes et leurs permissions.
+
+### 3. **Autres schémas et tables**
+   - **`pg_stat`** : Contient des statistiques sur l'exécution des requêtes et la performance du serveur PostgreSQL.
+   - **`pg_temp`** : Contient des tables temporaires créées durant la session de l'utilisateur.
+   - **`pg_tables`** : Vues qui listeront toutes les tables accessibles dans la base de données.
+   - **`pg_indexes`** : Liste tous les index dans la base de données.
+
+### 4. **Emplacement physique des données**
+   Les tables de `pg_catalog` et toutes les données de PostgreSQL (y compris les tables d'application et de système) sont stockées dans le répertoire de données PostgreSQL. Par défaut, cela se situe dans le répertoire `PGDATA` sur le serveur.
+
+   - Si vous utilisez un conteneur Docker, par exemple, PostgreSQL stocke les données dans un volume Docker. 
+   - Sur une installation classique de PostgreSQL, le répertoire de données est souvent situé dans un chemin comme `/var/lib/postgresql/data`.
+
+   **Exemple pour un conteneur Docker :**
+   - Si vous avez configuré un volume pour les données de PostgreSQL, le répertoire de données sera stocké dans ce volume, et vous pourriez le retrouver à un emplacement comme `/var/lib/postgresql/data`.
+
+### 5. **Accès aux tables internes**
+   Vous pouvez consulter ces tables directement via SQL pour examiner les métadonnées, les utilisateurs, et autres configurations internes. Par exemple :
+   
+   ```sql
+   SELECT * FROM pg_catalog.pg_class;
+   ```
+
+## En résumé :
+
+- Les tables internes de PostgreSQL, telles que celles stockées dans le schéma pg_catalog, sont essentielles pour la gestion de la base de données, mais elles sont stockées physiquement dans le répertoire de données de PostgreSQL.
+- Sur un conteneur Docker, ce répertoire est souvent mappé vers un volume Docker ou un chemin spécifique sur l'hôte.
+
