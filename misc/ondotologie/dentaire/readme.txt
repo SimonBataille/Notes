@@ -16,7 +16,7 @@ Caro :
 - ce que tu fais le plus
 - les taches annexes
 - prefere/deteste, positif/negatif, contrainte
-- tes debuts
+- tes debuts et transitions avec le cabinet ?
 - relation avec assistants (aussi au debut), patients, conflits, relationnel
 - difficultes dans tes etudes
 
