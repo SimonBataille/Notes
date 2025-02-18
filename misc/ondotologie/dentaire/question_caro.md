@@ -61,4 +61,5 @@ Avoir une idée précise des études et du métier de dentiste : ce dans quoi on
 - Selon toi, quels sont les signes qu’une personne ne serait pas faite pour ce métier ?  
 - Quelles sont les qualités qui te semblaient importantes avant de commencer, et celles qui se sont révélées essentielles après quelques années d’expérience ?  
 - Le métier de dentiste a-t-il évolué ces dernières années ? Y a-t-il des changements majeurs qui impactent la profession aujourd’hui ?  
+- Est-ce difficile de maintenir ses connaissances theoriques et techniques a niveau ?
 
