@@ -55,6 +55,9 @@ En outre, cette profession offre une gestion plus directe et autonome, avec une 
 ####
 Dans ma réflexion sur la chirurgie dentaire, j’ai tenu à me confronter à la réalité du métier, en prenant en compte **ses contraintes aussi bien psychologiques que physiques et administratives**. Grâce à mon stage d’observation et à mes échanges avec des praticiens, j’ai pu me faire une idée précise des défis quotidiens que rencontre un chirurgien-dentiste.
 
+Je me suis rassure sur mes capacites manuelles/techniques(lecture de radio, vue du sang, ), organisationnelles (gestion du suivi patient, des stocks), de pedagogie (explique a chaque patient, remontrance) et de gestion des personnalites (enfants, personne agees, peu soigneuse de leurs dents, relation avec l'assistant).
+Dans les echanges pour le cote physique et administratif.
+
 Le métier de dentiste implique une charge mentale élevée, notamment dans la prise de décisions médicales et la gestion du stress des patients anxieux. Ce rapport à l’humain est justement un élément qui me motive particulièrement. En tant qu’ingénieur, j’ai souvent dû trancher entre plusieurs solutions techniques, chacune comportant des compromis et des risques. Il fallait évaluer les conséquences, prendre une décision et l’assumer, une démarche qui me semble proche de la responsabilité d’un dentiste face à un choix thérapeutique.
 
 Par ailleurs, mon expérience en tant que professeur de physique-chimie m’a permis de développer des compétences relationnelles essentielles. Enseigner, c’est savoir adapter son discours aux besoins de chacun, mais aussi gérer les attentes et inquiétudes des parents, en particulier lorsque l’élève rencontre des difficultés. Cette capacité d’écoute et de pédagogie me semble fondamentale en chirurgie dentaire, où il faut rassurer les patients, expliquer les soins et instaurer une relation de confiance.
