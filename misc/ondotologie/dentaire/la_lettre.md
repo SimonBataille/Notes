@@ -3,10 +3,6 @@ Je suis Simon Bataille. Apres le bac j'ai integre une CPGE MPSI/MP a Grignard a 
 
 
 ## Quel est mon projet ?
-En devenant dentiste je realise un projet global qui est de sortir de la temporalite d'ingenieur, en me rapprochant de l'endroit ou j'ai envie de vivre, pour commencer un metier a la fois manuel, ou les resultats sont immédiats et visibles concret, bien considerer, permettant de bien vivre. Sans  pour autant idealiser le metier et en etant tout a fait conscient de ce qui m'attent Je vais detailler ces points dans les prochains paragraphes.
-
-En devenant dentiste je realise un projet global et murit d'evoluer vers une temporalite concréte, utile et autonome. Ce metier offrant de plus une situation sociale/salariale confortable Tout en ayant la possibilite de choisir la ou je veux vivre car ma region d'origine et de coeur manque de dentiste et par consequent le confort de resider pres de mon travail. Je reste neanmoins conscient de ce qui m'attend tant au niveau des etudes que des contraintes professionel qu'implique cette profession. Je vais expliquer mon projet et la vision que j'ai du metier dans les parties suivantes.
-
 En choisissant de devenir chirurgien-dentiste, je concrétise un projet mûrement réfléchi, guidé par le désir d’exercer un métier à la fois concret, utile et autonome. Cette profession offre, en plus d’un cadre de travail stimulant, une stabilité sociale et salariale appréciable, ainsi que la liberté de choisir mon lieu d’exercice. Originaire d’une région où les besoins en dentistes sont importants, cette opportunité me permettrait également de m’installer durablement dans un cadre qui m’est cher, tout en bénéficiant du confort de vivre à proximité de mon activité professionnelle.
 
 Conscient des exigences de cette voie, tant sur le plan des études que des contraintes inhérentes à l’exercice du métier, j’ai pris le temps d’analyser ses réalités et ses contraintes. Dans les parties suivantes, je vais détailler les raisons qui motivent ma transition vers l’odontologie ainsi que la vision que j’ai de cette profession.
@@ -15,25 +11,48 @@ Conscient des exigences de cette voie, tant sur le plan des études que des cont
 ### Je garde les points commun mais je change de temporalite
 ### Liberte de m'installer ou je veux et vie confortable
 
-Aujourd’hui, je souhaite changer de temporalité, en exerçant un métier plus concret, plus autonome, où les résultats de mon travail sont directement visibles. Ou j'ai une plus grande liberte geographique de l'endroit ou je travaille.
-J'ai besoin d'evoluer vers d'une temporalite d'un marche du travail prive où les projets peuvent être concurentielles abstraits et longs, avec une finalite et une utilite globl epour la communaute, a une temporalite ou j'enchaîne des actes médicaux/taches a majorite manuelle de durées variables (consultations, soins, interventions), avec une diversité quotidienne, des résultats sont **immédiats et visibles**, un implication pour la communaute/sante des personnes et une reconnaissance sociale et salariale motivante et gratifiante.
+Dans ma réflexion sur mon orientation professionnelle, ma motivation pour l’odontologie est relativement récente, mais mon intérêt pour le secteur médical est bien plus ancien. Il s’est construit au fil de rencontres avec des professionnels de santé, où j’ai pressenti que cet environnement correspondait à mes aspirations.
 
-Dans mes reflexions/motivation, ma motivation pour l’odontologie est récente, mon intérêt pour le secteur médical, lui, est plus ancien. Il s'est forge au contact de personne du milieu medical ou je pressentait que ce milieu pouvez convenir a mes aspirations.
-À mon retour de Polynésie française, une discussion avec une amie chirurgienne-dentiste a renforcé mon intérêt pour cette profession. Son enthousiasme pour son métier, la précision du geste technique, la prise en charge globale du patient depuis le diagnostic jusqu’à l’acte médical, tout cela m’a profondément séduit. Je me reconnais pleinement dans les qualités qu’elle associe à son travail : patience, perfectionnisme, souci du détail, réflexion approfondie, ainsi que dans la gestion des relations avec les patients et les assistants. De plus, ce métier fait écho à plusieurs expériences et compétences que j’ai déjà développées : la précision du geste manuel que j’ai pu expérimenter en chaudronnerie, l’utilisation des molécules étudiées en chimie, la manipulation d’appareils électroniques en physique, et la réflexion stratégique propre à la conception de solutions informatiques.
+À mon retour de Polynésie française, une discussion avec une amie chirurgienne-dentiste a renforcé cet intérêt. Son enthousiasme pour son métier, la précision du geste technique, ainsi que la réflexion qu’exige la prise en charge globale du patient, du diagnostic à l’acte médical, m’ont profondément séduit. Je me suis pleinement reconnu dans les qualités qu’elle associe à son travail : patience, perfectionnisme, souci du détail, rigueur intellectuelle, mais aussi dans la gestion des relations avec les patients et les assistants.
 
-Par ailleurs, cette profession me correspond aussi par son aspect mécanique et précis. J’apprécie l’idée d’effectuer des soins bien définis et maîtrisés, nécessitant de la minutie et du savoir-faire, mais sans l’incertitude permanente qui caractérise certains métiers. Enfin, la possibilité d’exercer en salariat avant de se lancer en libéral offre une transition rassurante, me permettant de prendre le temps d’acquérir de l’expérience avant d’envisager l’indépendance professionnelle.
+De plus, cette profession fait écho à plusieurs expériences et compétences que j’ai déjà développées. La précision du geste manuel, expérimentée à travers la chaudronnerie et le prototypage électronique, trouve un prolongement naturel dans la dextérité requise en odontologie. Mon connaissance des molécules en chimie, la manipulation d’appareils électroniques en physique, et la réflexion stratégique propre à la conception de solutions informatiques constituent autant d’atouts transférables vers cette discipline. Enfin, mon expérience en tant que professeur dans des contextes pas toujours favorisés m’a permis de développer pédagogie et empathie, des qualités essentielles pour accompagner les patients et instaurer une relation de confiance.
 
-L’un des aspects qui me séduit particulièrement dans la chirurgie dentaire est la stabilité qu’offre cette profession. Contrairement à d’autres domaines, notamment l’informatique où l’obsolescence rapide des technologies impose une remise en question constante, l’essentiel du savoir et des gestes techniques en odontologie est durablement acquis. Bien que la formation continue soit nécessaire, elle ne repose pas sur une remise à niveau permanente, ce qui permet d’exercer sereinement sans avoir à s’adapter sans cesse à de nouvelles méthodes de travail.
+Je souhaite évoluer vers une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et majoritairement manuels, qu’il s’agisse de consultations, de soins ou d’interventions. Cette diversité quotidienne s’accompagne d’un impact direct sur la santé des patients, avec des résultats immédiats et visibles, offrant une reconnaissance à la fois sociale et salariale, à la mesure de l’engagement et de la précision exigés par ce métier.
 
-Moins soumis aux fluctuations du marché du travail,
-De plus, la pratique dentaire permet d’exercer partout, avec une demande constante de praticiens. C’est une carrière qui offre une sécurité professionnelle sur le long terme, sans la pression des deadlines de projet, des réunions stratégiques ou de la mise à jour perpétuelle des compétences exigée dans d’autres métiers. À cela s’ajoute l’avantage de ne pas être soumis aux contraintes du marché du travail classique, où il faut sans cesse actualiser son CV et passer des entretiens d’embauche.
+"À l’inverse, la temporalité du travail en ingénierie repose sur des projets longs et abstraits, souvent soumis à des impératifs concurrentiels et économiques, dont l’utilité globale pour la communauté peut être incertaine. Le rythme y est marqué par des cycles de réunions, des réajustements stratégiques et une pression constante liée aux délais, avec un contrôle limité sur l’évolution du travail. En choisissant la dentisterie, je souhaite troquer cette logique de marché pour une profession où l’expertise technique et la rigueur trouvent un aboutissement concret et utile, dans une relation directe avec les patients et leur bien-être."
+
+Le métier de chirurgien-dentiste offre une gestion plus directe et autonome de son activité, avec une stabilité professionnelle garantie par une forte demande, indépendamment des fluctuations économiques du secteur privé traditionnel. Cette stabilité repose également sur le fait que l’essentiel du savoir et des gestes techniques en odontologie est acquis de manière durable. Bien que la formation continue soit nécessaire, elle ne requiert pas une remise en question constante face à l’obsolescence rapide des technologies, évitant ainsi une surcharge de travail prolongée, comme c’est souvent le cas dans d’autres domaines. De plus, la possibilité de débuter en tant que salarié avant d’envisager une installation en libéral permet une progression naturelle et sécurisante, dans une zone géographique que j’aurai choisie, me laissant ainsi la liberté d’évoluer à mon rythme, sans subir une pression permanente de performance ou d’innovation dictée par le marché.
+
+####
+Dans ma réflexion sur mon orientation professionnelle, ma motivation pour l’odontologie est relativement récente, mais mon intérêt pour le secteur médical est bien plus ancien. Il s’est construit au fil de rencontres avec des professionnels de santé, où j’ai pressenti que cet environnement correspondait à mes aspirations.
+
+À mon retour de Polynésie française, une discussion avec une amie chirurgienne-dentiste a renforcé cet intérêt. Son enthousiasme pour son métier, la précision du geste technique, ainsi que la réflexion qu’exige la prise en charge globale du patient, du diagnostic à l’acte médical, m’ont profondément séduit. Je me suis pleinement reconnu dans les qualités qu’elle associe à son travail : patience, perfectionnisme, souci du détail, rigueur intellectuelle, mais aussi dans la gestion des relations avec les patients et les assistants.
+
+De plus, cette profession fait écho à plusieurs expériences et compétences que j’ai déjà développées. La précision du geste manuel, acquise à travers la chaudronnerie et le prototypage électronique, trouve un prolongement naturel dans la dextérité requise en odontologie. Ma connaissance des molécules en chimie, la manipulation d’appareils électroniques en physique et la réflexion stratégique propre à la conception de solutions informatiques constituent autant d’atouts transférables vers cette discipline. Enfin, mon expérience en tant que professeur dans des contextes parfois difficiles m’a permis de développer pédagogie et empathie, des qualités essentielles pour accompagner les patients et instaurer une relation de confiance.
+
+Je souhaite évoluer vers une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et principalement manuels, qu’il s’agisse de consultations, de soins ou d’interventions. Cette diversité quotidienne s’accompagne d’un impact direct sur la santé des patients, avec des résultats immédiats et visibles, offrant une reconnaissance sociale et salariale à la hauteur de l’engagement et de la précision exigés par ce métier.
+
+À l’inverse, la temporalité du travail en ingénierie repose sur des projets longs et abstraits, souvent soumis à des impératifs concurrentiels et économiques, dont l’utilité réelle pour la communauté peut être incertaine. Le rythme y est marqué par des cycles de réunions, des réajustements stratégiques et une pression constante liée aux délais, avec un contrôle limité sur l’évolution du travail. En choisissant la dentisterie, je souhaite troquer cette logique de marché pour une profession où l’expertise technique et la rigueur trouvent un aboutissement concret et utile, dans une relation directe avec les patients et leur bien-être.
+
+Le métier de chirurgien-dentiste offre une gestion plus directe et plus autonome de son activité, avec une stabilité professionnelle assurée par une forte demande, indépendamment des fluctuations économiques du secteur privé traditionnel. Cette stabilité repose aussi sur le fait que l’essentiel du savoir et des gestes techniques en odontologie est acquis de manière durable. Bien que la formation continue soit nécessaire, elle ne requiert pas une remise en question constante face à l’obsolescence rapide des technologies, évitant ainsi une surcharge de travail prolongée, comme c’est souvent le cas dans d’autres domaines. De plus, la possibilité de commencer en tant que salarié avant de s’installer en libéral permet une progression naturelle et sécurisante, dans une zone géographique choisie, me laissant ainsi la liberté d’évoluer à mon rythme, sans subir une pression permanente de performance ou d’innovation dictée par le marché.
+
+#####
+Ma motivation pour l’odontologie est récente, mais mon intérêt pour le secteur médical est plus ancien. Il s’est construit au fil de rencontres avec des professionnels de santé, où j’ai pressenti que cet environnement correspondait à mes aspirations. Une discussion avec une amie chirurgienne-dentiste a renforcé cet intérêt : son enthousiasme pour son métier, la précision du geste technique et la réflexion qu’exige la prise en charge du patient m’ont profondément séduit. Je me suis reconnu dans les qualités qu’elle associe à son travail : patience, perfectionnisme, souci du détail, rigueur intellectuelle et gestion des relations avec les patients et les assistants.
+
+Cette profession fait aussi écho à mes expériences passées. La précision du geste manuel, développée en chaudronnerie et en prototypage électronique, trouve un prolongement naturel dans la dextérité requise en odontologie. Mon bagage scientifique en chimie, physique et conception informatique m’apporte des compétences transférables, tout comme mon expérience d’enseignant m’a permis de développer pédagogie et empathie, des qualités essentielles pour accompagner les patients.
+
+Je recherche une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et manuels, offrant des résultats visibles et un impact direct sur la santé des patients. Contrairement aux projets longs et abstraits de l’ingénierie, la dentisterie permet une action immédiate et utile, sans dépendre des contraintes du marché.
+
+En outre, cette profession offre une gestion plus directe et autonome, avec une stabilité professionnelle garantie par une forte demande, indépendamment des fluctuations économiques. L’essentiel du savoir et des gestes techniques est acquis durablement, évitant une remise en question constante face à l’obsolescence des technologies. Enfin, la possibilité de débuter en tant que salarié avant de s’installer en libéral permet une progression naturelle et sécurisante, dans une zone géographique choisie, sans subir la pression permanente de la performance imposée par le marché du travail classique.
+
+
 
 
 ### Ma vision/Les contraintes/Comment je suis resilient
 
 Dans ma réflexion sur la chirurgie dentaire, j’ai tenu à me confronter à la réalité du métier, en prenant en compte **ses contraintes aussi bien physiques que psychologiques et administratives**. Grâce à mon stage d’observation et à mes échanges avec des praticiens, j’ai pu me faire une idée précise des défis quotidiens que rencontre un chirurgien-dentiste.
 
-Je suis conscient(e) que l’exercice de cette profession exige **une endurance physique importante**. La posture prolongée, la précision des gestes et l’exposition aux risques sanitaires impliquent une rigueur et une discipline que je suis prêt(e) à adopter. Mon expérience en ingénierie, où la minutie et la concentration sont essentielles, m’a habitué(e) à travailler avec exigence et persévérance.
+Je suis conscient(e) que l’exercice de cette profession exige **une endurance physique importante**. La posture prolongée, la précision des gestes et l’exposition aux risques sanitaires impliquent une rigueur et une discipline que je suis prêt(e) à adopter. Mon expérience en ingénierie, où la minutie et la concentration sont essentielles, et dans les ateliers et sur les chantiers m’a habitué(e) à travailler avec exigence et persévérance.
 
 Le métier de dentiste implique aussi **une charge mentale élevée**, notamment dans la prise de décisions médicales et la gestion du stress lié aux patients anxieux. Ce rapport à l’humain est justement un élément qui me motive particulièrement. En tant qu’ingénieur, j’ai souvent dû **trancher sur des choix techniques complexes**, où plusieurs solutions étaient envisageables mais impliquaient chacune des compromis. Il fallait évaluer les risques, prendre une décision et l’assumer, ce qui me semble similaire à la responsabilité d’un dentiste face à un choix thérapeutique. 
 
@@ -51,17 +70,6 @@ Au-delà de l’aspect médical, je sais que le chirurgien-dentiste, notamment e
 Malgré ces contraintes, la chirurgie dentaire reste un métier qui me motive profondément. Son équilibre entre **pratique médicale, habileté technique, gestion et relation humaine** correspond parfaitement à mes aspirations. Je suis prêt(e) à m’engager pleinement dans cette voie et à relever les défis qu’elle implique.  
 
 #### Brouillon
-
-Ayant des proches dans le domaine de la santé, j’ai toujours été sensible à l’idée de mettre mes connaissances au service des patients. La possibilité d’exercer partout, et notamment dans le Cotentin, constitue un atout majeur à mes yeux. À mon retour de Polynésie française, une discussion avec une amie chirurgienne-dentiste a renforcé mon intérêt pour cette profession. Son enthousiasme pour son métier, la précision du geste technique, la prise en charge globale du patient depuis le diagnostic jusqu’à l’acte médical, tout cela m’a profondément séduit.
-
-Je me reconnais pleinement dans les qualités qu’elle associe à son travail : patience, perfectionnisme, souci du détail, réflexion approfondie, ainsi que dans la gestion des relations avec les patients et les assistants. De plus, ce métier fait écho à plusieurs expériences et compétences que j’ai déjà développées : la précision du geste manuel que j’ai pu expérimenter en chaudronnerie, l’utilisation des molécules étudiées en chimie, la manipulation d’appareils électroniques en physique, et la réflexion stratégique propre à la conception de solutions informatiques.
-
-L’un des aspects qui me séduit particulièrement dans la chirurgie dentaire est la stabilité qu’offre cette profession. Contrairement à d’autres domaines, notamment l’informatique où l’obsolescence rapide des technologies impose une remise en question constante, l’essentiel du savoir et des gestes techniques en odontologie est durablement acquis. Bien que la formation continue soit nécessaire, elle ne repose pas sur une remise à niveau permanente, ce qui permet d’exercer sereinement sans avoir à s’adapter sans cesse à de nouvelles méthodes de travail.
-
-De plus, la pratique dentaire permet d’exercer partout, avec une demande constante de praticiens. C’est une carrière qui offre une sécurité professionnelle sur le long terme, sans la pression des deadlines de projet, des réunions stratégiques ou de la mise à jour perpétuelle des compétences exigée dans d’autres métiers. À cela s’ajoute l’avantage de ne pas être soumis aux contraintes du marché du travail classique, où il faut sans cesse actualiser son CV et passer des entretiens d’embauche.
-
-Par ailleurs, cette profession me correspond aussi par son aspect mécanique et précis. J’apprécie l’idée d’effectuer des soins bien définis et maîtrisés, nécessitant de la minutie et du savoir-faire, mais sans l’incertitude permanente qui caractérise certains métiers. Enfin, la possibilité d’exercer en salariat avant de se lancer en libéral offre une transition rassurante, me permettant de prendre le temps d’acquérir de l’expérience avant d’envisager l’indépendance professionnelle.
-
 
 Dans ma réflexion sur la chirurgie dentaire, j’ai tenu à me confronter à la réalité du métier, en prenant en compte **ses contraintes aussi bien physiques que psychologiques et administratives**. Grâce à mon stage d’observation et à mes échanges avec des praticiens, j’ai pu me faire une idée précise des défis quotidiens que rencontre un chirurgien-dentiste.
 
@@ -84,58 +92,6 @@ Malgré ces contraintes, la chirurgie dentaire reste un métier qui me motive pr
 
 ca va merci. A partir des points communs/differences suivants entre ingenieur et chirurgien dentiste, tu peux me faire des paragraphes sur le fait que je souhaite devenir dentiste car je veux changer de temporalite. Par temporalite j'entend garder les points communs mais troquer les differences en faveur de dentiste. Il y a aussi une difference que je veux integrer, c'est que les projets d'ingenieur n'ont pas forcement une finalite utile comme soigner les dents des gens. Les projets sont soumis un marche donc a une creation de besoin mercantile, de concurrence pour des marches d'objet materialiste et que je ne m'y retouve pas trop. Tu vois comment integrer ca ?  
 
-## Points communs entre ingénieur, professeur de physique-chimie et chirurgien-dentiste
-
-1. **Analyse et résolution de problèmes**  
-   - En tant qu’ingénieur en bureau d’études, tu identifies des problèmes techniques et cherches des solutions optimisées.  
-   - En tant que dentiste, tu dois diagnostiquer des pathologies et choisir le traitement le plus adapté.  
-   - Le raisonnement logique et méthodique est un atout commun aux deux professions.
-
-2. **Précision et rigueur**  
-   - L’ingénieur travaille avec des modèles, des calculs et des simulations nécessitant une grande précision.  
-   - Le dentiste réalise des interventions où chaque geste compte (ex. pose d’implants, soins prothétiques).  
-   - La rigueur et la méticulosité sont donc des qualités transférables.
-
-3. **Utilisation de la technologie et des logiciels spécialisés**  
-   - En bureau d’études, tu manipules des logiciels complexes (modélisation, simulation, etc.).  
-   - En dentisterie, la technologie est omniprésente (imagerie 3D, CFAO – Conception et Fabrication Assistées par Ordinateur, etc.).  
-   - Ton aisance avec les outils numériques et ta capacité d’apprentissage technique sont un avantage.
-
-4. **Pédagogie et transmission**  
-   - En tant qu’ancien professeur, tu as développé une capacité à expliquer des concepts complexes de manière accessible.  
-   - En dentisterie, il est crucial d’expliquer clairement les traitements aux patients et de les sensibiliser à l’hygiène bucco-dentaire.  
-   - Ton expérience en pédagogie te sera donc utile.
-
----
-
-## Différences fondamentales
-
-1. **Rapport à l’humain**  
-   - **Ingénieur** : Travail essentiellement abstrait et technique, interactions principalement avec des collègues et des clients.  
-   - **Dentiste** : Relation directe et quotidienne avec les patients, nécessité d’un bon relationnel et d’une écoute attentive.  
-   - **Justification du changement** : Tu souhaites une profession plus tournée vers l’humain, avec un impact direct sur le bien-être des patients.
-
-2. **Travail manuel vs travail intellectuel abstrait**  
-   - **Ingénieur** : Activité intellectuelle, analyse de données, conception sur écran.  
-   - **Dentiste** : Activité à la fois intellectuelle et **manuelle**, nécessitant une dextérité fine.  
-   - **Justification du changement** : Tu veux exercer un métier où **tes mains et ton intelligence travaillent ensemble** pour soigner directement.
-
-3. **Temporalité et nature des tâches**  
-   - **Ingénieur** : Travaille sur des **projets longs**, avec des tâches définies sur plusieurs semaines/mois.  
-   - **Dentiste** : Enchaîne des actes médicaux de durées variables (consultations, soins, interventions), avec une diversité quotidienne.  
-   - **Justification du changement** : Tu préfères un métier où les résultats sont **immédiats et visibles**, contrairement à l’ingénierie où les projets peuvent être abstraits et longs.
-
-4. **Indépendance et stabilité professionnelle**  
-   - **Ingénieur** : Soumis aux fluctuations du marché du travail, aux processus de recrutement, et parfois à la précarité de l’emploi dans certaines branches.  
-   - **Dentiste** : Forte demande de professionnels, possibilité de s’installer en libéral, meilleure stabilité de carrière.  
-   - **Justification du changement** : Tu cherches une **sécurité professionnelle**, en sortant du circuit des **entretiens d’embauche et des restructurations du secteur privé**.
-
-5. **Rémunération et reconnaissance**  
-   - **Ingénieur** : Salaire parfois plafonné dans le secteur privé, progression lente et dépendante de l’entreprise.  
-   - **Dentiste** : Rémunération attractive, avec une autonomie financière liée au mode d’exercice libéral ou salarié.  
-   - **Justification du changement** : La dentisterie offre **un meilleur équilibre entre travail et rémunération**, tout en garantissant une reconnaissance professionnelle forte.
-
----
 
 ## Pourquoi passer d’ingénieur à dentiste ?
 
