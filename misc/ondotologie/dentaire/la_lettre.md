@@ -5,6 +5,12 @@ Je suis Simon Bataille. Apres le bac j'ai integre une CPGE MPSI/MP a Grignard a 
 ## Quel est mon projet ?
 En devenant dentiste je realise un projet global qui est de sortir de la temporalite d'ingenieur, en me rapprochant de l'endroit ou j'ai envie de vivre, pour commencer un metier a la fois manuel, ou les resultats sont immédiats et visibles concret, bien considerer, permettant de bien vivre. Sans  pour autant idealiser le metier et en etant tout a fait conscient de ce qui m'attent Je vais detailler ces points dans les prochains paragraphes.
 
+En devenant dentiste je realise un projet global et murit d'evoluer vers une temporalite concréte, utile et autonome. Ce metier offrant de plus une situation sociale/salariale confortable Tout en ayant la possibilite de choisir la ou je veux vivre car ma region d'origine et de coeur manque de dentiste et par consequent le confort de resider pres de mon travail. Je reste neanmoins conscient de ce qui m'attend tant au niveau des etudes que des contraintes professionel qu'implique cette profession. Je vais expliquer mon projet et la vision que j'ai du metier dans les parties suivantes.
+
+En choisissant de devenir chirurgien-dentiste, je concrétise un projet mûrement réfléchi, guidé par le désir d’exercer un métier à la fois concret, utile et autonome. Cette profession offre, en plus d’un cadre de travail stimulant, une stabilité sociale et salariale appréciable, ainsi que la liberté de choisir mon lieu d’exercice. Originaire d’une région où les besoins en dentistes sont importants, cette opportunité me permettrait également de m’installer durablement dans un cadre qui m’est cher, tout en bénéficiant du confort de vivre à proximité de mon activité professionnelle.
+
+Conscient des exigences de cette voie, tant sur le plan des études que des contraintes inhérentes à l’exercice du métier, j’ai pris le temps d’analyser ses réalités et ses contraintes. Dans les parties suivantes, je vais détailler les raisons qui motivent ma transition vers l’odontologie ainsi que la vision que j’ai de cette profession.
+
 ### Evolution d'une temporalite d'ingenieur vers la temporalite de dentiste
 ### Je garde les points commun mais je change de temporalite
 ### Liberte de m'installer ou je veux et vie confortable
@@ -138,5 +144,7 @@ Ta transition se justifie par **une volonté d’exercer un métier plus humain,
 De plus, la dentisterie représente un choix **plus stable et indépendant**, te permettant de **sortir du marché du travail classique du secteur privé**, tout en bénéficiant d’une meilleure **sécurité financière et professionnelle**. L’équilibre entre **pratique médicale, contact humain et autonomie** en fait une profession plus en accord avec tes aspirations personnelles et professionnelles.
  
 
-## Ai-je la capcite de suivre des etudes de sante
+## Ai-je la capcite de suivre des etudes de sante ?
+
+penser a la curiosite
 ## Comment je me suis organise ?
