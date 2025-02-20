@@ -3,7 +3,9 @@ Après un bac scientifique en 2008, j’ai intégré une classe préparatoire au
 
 Sur le plan professionnel, j’ai débuté en 2014-2015 avec une expérience en chaudronnerie-soudure, avant de me reprendre mes etudes dans les systèmes embarqués et le développement logiciel. En 2017, lors de mon stage chez FACTEM, j’ai travaillé sur un casque audio à réduction de bruit, puis j’ai rejoint Notilo Plus (2018-2020), où j’ai développé des cartes electroniques et des logiciels pour un drone sous-marin autonome. J'ai demissione en 2020 pour suivre ma compagne en polynesie francaise. En 2021, j’ai eu l'opportunite d'etre professeur de physique et d’informatique dans deux lycées de Polynésie française. En 2022, j’ai réintégré le secteur de l’ingénierie en rejoignant Innovative Digital Technologies en tant que full-stack engineer, où je me suis spécialisé dans le développement de logicielle de commerce. Ceci jusqu'a mon arrivee en 2024 a Pekin ou je reside actuellement et ou j'effectue des remplacements dans les matieres scientifiques.
 
-Mon parcours illustre ma capacite a changer et ma polyvalence entre les sciences, l’ingénierie et l’enseignement, avec une évolution vers des technologies avancées et des environnements de développement logiciel complexes, tout en ayant une expérience significative dans la transmission des savoirs et le travail manuel. 
+Mon parcours illustre ma capacite a changer et ma polyvalence entre les sciences, l’ingénierie et l’enseignement, avec une évolution vers des technologies avancées et des environnements de développement logiciel complexes, tout en ayant une expérience significative dans la transmission des savoirs et le travail manuel.
+
+Donc j'ai un parcours polyvalent... Tout en ayant plusieurs fois changer de secteurs avec succes.s 
 
 ## Quel est mon projet ?
 En choisissant de devenir chirurgien-dentiste, je concrétise un projet mûrement réfléchi, guidé par le désir d’exercer un métier à la fois concret, utile et autonome. Cette profession offre, en plus d’un cadre de travail stimulant, une stabilité sociale et salariale appréciable, ainsi que la liberté de choisir mon lieu d’exercice. Originaire d’une région où les besoins en dentistes sont importants, cette opportunité me permettrait également de m’installer durablement dans un cadre qui m’est cher, tout en bénéficiant du confort de vivre à proximité de mon activité professionnelle.
@@ -44,12 +46,24 @@ Ma motivation pour l’odontologie est récente, mais mon intérêt pour le sect
 
 Cette profession fait aussi écho à mes expériences passées. La précision du geste manuel, développée en chaudronnerie et en prototypage électronique, trouve un prolongement naturel dans la dextérité requise en odontologie. Mon bagage scientifique en chimie, physique et conception informatique m’apporte des compétences transférables, tout comme mon expérience d’enseignant m’a permis de développer pédagogie et empathie, des qualités essentielles pour accompagner les patients.
 
-Je recherche une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et manuels, offrant des résultats visibles et un impact direct sur la santé des patients. Contrairement aux projets longs et abstraits de l’ingénierie, la dentisterie permet une action immédiate et utile, sans dépendre des contraintes du marché.
+Je recherche une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et manuels, offrant des résultats visibles et un impact direct sur la santé des patients. Contrairement aux projets longs et abstraits de l’ingénierie, la dentisterie permet une action immédiate et utile, sans dépendre des contraintes du marché/projet/client.
 
 En outre, cette profession offre une gestion plus directe et autonome, avec une stabilité professionnelle garantie par une forte demande, indépendamment des fluctuations économiques. L’essentiel du savoir et des gestes techniques est acquis durablement, évitant une remise en question constante face à l’obsolescence des technologies. Enfin, la possibilité de débuter en tant que salarié avant de s’installer en libéral permet une progression naturelle et sécurisante, dans une zone géographique choisie, sans subir la pression permanente de la performance imposée par le marché du travail classique.
 
 
 ### Ma vision/Les contraintes/Comment je suis resilient/Apport du stage et des echanges avec Caroline
+
+Afin de sortir du fantasme et d'apprehender les contraintes du metier, j'ai beaucoup echange et fait un stage d'observation avec des praticiens. Je me repreesnte ce metier pendant le rdv mais aussi en dehors. Je me suis rassure sur les points essentiels que sont la relation avec la patientelle, la technicite/prise de decision medicale et la gestion administrative et la penibilite. 
+
+Je me suis rassure sur la gestion pur du patient : fruit d'une formation solide a l'universite donc pas de souci plus experience progressive (Question Caro : c'est le cas ?)
+Premier point : on est pret quand on sort de la formation => confiance dans les capacites techniques et connaissances theorique (et je peux les acquerir !), bonne pratique de gestion du patient (empathie et pedagogie avec les eleves/parents stresse, chemin detourne), tout est cadre, logiciel(ingenieur, cadre), bonne pratique => je sais prendre les bonnes decisions
+Deuxieme point : vue du sang, degout, patient pendant rdv, pedagogie, relation avec assiatant => beaucoup de communication (et je sais communique car ingenieur)
+Je me suis d'abord rassure sur les capacites techniques, les connaissances, la gestion de l'acte (vue du sang), prise de decision, la relation avec le patient. Caroline m'a confirme que l'on etait pret en sortant de la formation qui est progressive. La pedagogie fesant echo au bonne pratique de la formation, le suivi du patient via le logiciel => tout ceci reduit la charge mentale et l'indecision de la prise de decision. Spontanement je pense a l'anestesie en deux point d'une dent a 4 racines'
+
+Je me suis rassure sur la gestion des a cote
+- Logistique, stock et administratif : encore une fois j'ai ete dans un cabinet bien gere, avec une bonne organisation (Question Caro : cela s'apprend comment ?) et moi je suis organise et cela fait echo a la gestion d'un projet sur lequel des ressources sont engagees ou la gestion d'une classe sur l'annee, voir loinet aide de logiciel!
+- Physique : Caroline a des douleurs d'epaules (Question Caroline : tu qs des douleurs), mais moi j'ai deja bosse en atelier et sur chantier, plus je suis toujours sportif et je travaille justement a maintenir mes capacites sur le long terme
+- en dehors : zone rouge donc beaucoup de demande => creneaux urgences + fermete + respecter les regles que l'on s'est fixe (pour duree et ne pas sacrifier sa sante) (Question caro : comment tu fais)
 
 
 ####
