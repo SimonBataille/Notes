@@ -46,24 +46,41 @@ Ma motivation pour l’odontologie est récente, mais mon intérêt pour le sect
 
 Cette profession fait aussi écho à mes expériences passées. La précision du geste manuel, développée en chaudronnerie et en prototypage électronique, trouve un prolongement naturel dans la dextérité requise en odontologie. Mon bagage scientifique en chimie, physique et conception informatique m’apporte des compétences transférables, tout comme mon expérience d’enseignant m’a permis de développer pédagogie et empathie, des qualités essentielles pour accompagner les patients.
 
-Je recherche une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et manuels, offrant des résultats visibles et un impact direct sur la santé des patients. Contrairement aux projets longs et abstraits de l’ingénierie, la dentisterie permet une action immédiate et utile, sans dépendre des contraintes du marché/projet/client.
+Je recherche une temporalité plus immédiate et concrète, où chaque journée est rythmée par des actes médicaux variés et manuels, offrant des résultats visibles et un impact direct sur la santé des patients. Contrairement aux projets longs et abstraits de l’ingénierie, la dentisterie permet une action immédiate et utile, sans dépendre des contraintes du marché/projet/client/de developpement de produits.
 
 En outre, cette profession offre une gestion plus directe et autonome, avec une stabilité professionnelle garantie par une forte demande, indépendamment des fluctuations économiques. L’essentiel du savoir et des gestes techniques est acquis durablement, évitant une remise en question constante face à l’obsolescence des technologies. Enfin, la possibilité de débuter en tant que salarié avant de s’installer en libéral permet une progression naturelle et sécurisante, dans une zone géographique choisie, sans subir la pression permanente de la performance imposée par le marché du travail classique.
 
 
 ### Ma vision/Les contraintes/Comment je suis resilient/Apport du stage et des echanges avec Caroline
 
-Afin de sortir du fantasme et d'apprehender les contraintes du metier, j'ai beaucoup echange et fait un stage d'observation avec des praticiens. Je me repreesnte ce metier pendant le rdv mais aussi en dehors. Je me suis rassure sur les points essentiels que sont la relation avec la patientelle, la technicite/prise de decision medicale et la gestion administrative et la penibilite. 
+Afin de mieux appréhender les réalités et les contraintes du métier de chirurgien-dentiste, j’ai échangé avec des praticiens et réalisé un stage d’observation en cabinet. Je me suis projete dans toutes les dimensions du métier, non seulement lors des soins prodigués aux patients, mais aussi dans ses aspects moins visibles : gestion administrative, organisation logistique et équilibre de vie. Je suis rassuré sur trois points essentiels. Premièrement, les compétences théoriques et pratiques acquises en formation permettent d’exercer sereinement a la sortie des études. Deuxièmement, je me suis assuré que les soins dentaires ne me posaient aucune réticence et que je me sentais en capacité de les pratiquer. Enfin, la gestion exta-clinique repose sur une bonne organisation et s’intègre naturellement.
+
+La gestion du patient lors du rendez-vous repose sur un socle technique et théorique solide, inscrit dans un cadre méthodologique structuré. En plus d'une entente bien travaillee avec l'assistant et d'un cadre ergonomique reflechi, la fluidité de la prise en charge découle d’une collecte rigoureuse des informations – par le biais de questions, d’observations et d’imagerie – consignées dans des notes de suivi. Elle s’appuie également sur un climat de confiance instaure par une communication adaptée, combinant pédagogie, discours rassurant et patience. Le choix de l’action la plus appropriée est ainsi réfléchi, validé et pleinement assumé. In fine, la charge mentale liée à la prise de décisions médicales et à la gestion du stress des patients anxieux est régulée de manière efficace.
+
+
+
 
 Je me suis rassure sur la gestion pur du patient : fruit d'une formation solide a l'universite donc pas de souci plus experience progressive (Question Caro : c'est le cas ?)
-Premier point : on est pret quand on sort de la formation => confiance dans les capacites techniques et connaissances theorique (et je peux les acquerir !), bonne pratique de gestion du patient (empathie et pedagogie avec les eleves/parents stresse, chemin detourne), tout est cadre, logiciel(ingenieur, cadre), bonne pratique => je sais prendre les bonnes decisions
-Deuxieme point : vue du sang, degout, patient pendant rdv, pedagogie, relation avec assiatant => beaucoup de communication (et je sais communique car ingenieur)
-Je me suis d'abord rassure sur les capacites techniques, les connaissances, la gestion de l'acte (vue du sang), prise de decision, la relation avec le patient. Caroline m'a confirme que l'on etait pret en sortant de la formation qui est progressive. La pedagogie fesant echo au bonne pratique de la formation, le suivi du patient via le logiciel => tout ceci reduit la charge mentale et l'indecision de la prise de decision. Spontanement je pense a l'anestesie en deux point d'une dent a 4 racines'
+- Premier point : on est pret quand on sort de la formation => confiance dans les capacites techniques et connaissances theorique (et je peux les acquerir !), bonne pratique de gestion du patient (empathie et pedagogie avec les eleves/parents stresse, chemin detourne), tout est cadre, logiciel(ingenieur, cadre), bonne pratique => je sais prendre les bonnes decisions
+- Deuxieme point : vue du sang, degout, patient pendant rdv, pedagogie, relation avec assiatant => beaucoup de communication (et je sais communique car ingenieur)
+Je me suis d'abord rassure sur les capacites techniques, les connaissances, la gestion de l'acte (vue du sang), prise de decision, la relation avec le patient. Caroline m'a confirme que l'on etait pret en sortant de la formation qui est progressive. La pedagogie fesant echo au bonne pratique de la formation, le suivi du patient via le logiciel => tout ceci reduit la charge mentale et l'indecision de la prise de decision. Spontanement je pense a l'anestesie en deux point d'une dent a 4 racines',  climat de confiance
+
+Concernant l'aspect extra-clinique, j’ai constaté qu'un cabinet bien structuré repose sur une organisation efficace des stocks, des coûts et de l'assisstant. 
+
+J’ai pu me rassurer quant à la gestion des aspects extra-cliniques du métier, qu’il s’agisse de l’organisation, des contraintes physiques ou de l’équilibre travail-santé.
+
+D’un point de vue logistique et administratif, j’ai constaté qu’un cabinet bien structuré repose sur une organisation efficace des stocks, des coûts et du personnel. Cet aspect me semble transposable à mon expérience en gestion de projet ou de classe, où la planification et l’optimisation des ressources sont essentielles. L’usage de logiciels spécialisés facilite également cette gestion, comme dans mes expériences passées.
+
+Sur le plan physique, bien que la posture prolongée puisse engendrer des douleurs, mon expérience en atelier et sur chantier m’a habitué à des efforts soutenus. De plus, étant sportif, je veille à entretenir ma condition physique pour prévenir ces contraintes sur le long terme.
+
+Enfin, dans une zone rouge à forte demande, il est crucial d’équilibrer disponibilité et santé. La gestion des urgences, la fermeté sur les créneaux et le respect de règles établies permettent d’éviter l’épuisement tout en garantissant une pratique sereine et durable. La réputation du praticien repose aussi sur cette capacité à structurer son exercice avec rigueur et efficacité.
 
 Je me suis rassure sur la gestion des a cote
-- Logistique, stock et administratif : encore une fois j'ai ete dans un cabinet bien gere, avec une bonne organisation (Question Caro : cela s'apprend comment ?) et moi je suis organise et cela fait echo a la gestion d'un projet sur lequel des ressources sont engagees ou la gestion d'une classe sur l'annee, voir loinet aide de logiciel!
+- Logistique, stock et administratif (cout, compta, assistant) : encore une fois j'ai ete dans un cabinet bien gere, avec une bonne organisation (Question Caro : cela s'apprend comment ?) et moi je suis organise et cela fait echo a la gestion d'un projet sur lequel des ressources sont engagees ou la gestion d'une classe sur l'annee, voir loinet aide de logiciel!
 - Physique : Caroline a des douleurs d'epaules (Question Caroline : tu qs des douleurs), mais moi j'ai deja bosse en atelier et sur chantier, plus je suis toujours sportif et je travaille justement a maintenir mes capacites sur le long terme
-- en dehors : zone rouge donc beaucoup de demande => creneaux urgences + fermete + respecter les regles que l'on s'est fixe (pour duree et ne pas sacrifier sa sante) (Question caro : comment tu fais)
+- en dehors : zone rouge donc beaucoup de demande => creneaux urgences + fermete + respecter les regles que l'on s'est fixe (pour duree et ne pas sacrifier sa sante) (Question caro : comment tu fais), reputation
+
+Pour resumer, des acquis techniques et theoriques, une methologie et une organisation rodees, de l'endurance. Avec un recul quotidien. moi je peux faire ca 
 
 
 ####
@@ -87,17 +104,11 @@ Je suis également conscient(e) que cette profession exige une endurance physiqu
 Malgré ces contraintes, la chirurgie dentaire me motive profondément. Son équilibre entre pratique médicale, habileté technique, gestion et relation humaine correspond parfaitement à mes aspirations. Ce métier exige un engagement total, une exigence constante, mais offre aussi une finalité claire et utile : soigner, soulager et améliorer la qualité de vie des patients. C’est dans cette direction que je souhaite désormais m’investir pleinement.
 
 #####
-Dans ma réflexion sur la chirurgie dentaire, j’ai tenu à me confronter à la réalité du métier, en prenant en compte ses exigences psychologiques, physiques et administratives. Mon stage d’observation et mes échanges avec des praticiens m’ont permis de mieux appréhender les défis quotidiens du chirurgien-dentiste.
+Afin de sortir du fantasme et de mieux appréhender les réalités et les contraintes du métier de chirurgien-dentiste, j’ai pris le temps d’échanger avec des praticiens et de réaliser un stage d’observation en cabinet. Cela m’a permis de me projeter dans toutes les dimensions du métier, non seulement pendant le rendez-vous avec le patient, mais aussi dans les aspects moins visibles : gestion administrative, organisation logistique et équilibre de vie. Ces expériences ont renforcé ma motivation, en me rassurant sur ma capacité à exercer cette profession sereinement.
 
-Ce métier implique une charge mentale importante, notamment dans la prise de décisions médicales et la gestion du stress des patients. Ce rapport à l’humain est justement ce qui m’attire. En ingénierie, j’ai souvent dû trancher entre plusieurs solutions techniques, en assumant les compromis et les risques, une approche qui me semble proche de la responsabilité du dentiste face à un choix thérapeutique.
+Sur le plan technique, j’ai pu constater que la formation universitaire offre un socle solide, tant sur les connaissances théoriques que sur les gestes pratiques. La progression est encadrée, et l’expérience vient affiner ce socle au fil des années, permettant d’être opérationnel dès la sortie de la formation. En tant qu’ingénieur et enseignant, j’ai déjà développé des compétences clés transférables, notamment la capacité à prendre des décisions rationnelles et méthodiques, à utiliser des logiciels de gestion et à appliquer des bonnes pratiques dans un cadre structuré. De plus, mon expérience en pédagogie et en communication me conforte dans ma capacité à gérer les interactions avec les patients et les assistants, en faisant preuve d’empathie et de clarté, notamment dans les situations de stress. Même la question du sang ou des soins invasifs ne m’effraie pas, car il s’agit d’une habitude qui s’acquiert progressivement.
 
-Mon expérience en tant que professeur m’a également permis de développer écoute et pédagogie, essentielles pour rassurer les patients et instaurer une relation de confiance. Au-delà des soins, un dentiste doit gérer sa réputation et fidéliser sa patientèle, car le bouche-à-oreille est déterminant pour un cabinet. Cela exige non seulement rigueur et sérieux, mais aussi des qualités de communication et d’adaptabilité, que j’ai toujours cultivées dans mes expériences professionnelles.
-
-La gestion d’un cabinet nécessite aussi des compétences entrepreneuriales, notamment en comptabilité, maîtrise des coûts et décisions stratégiques. Habitué(e) à jongler entre contraintes techniques et budgétaires en ingénierie, je suis prêt(e) à assumer cette dimension organisationnelle et décisionnelle.
-
-Je suis également conscient(e) des exigences physiques du métier : précision des gestes, posture prolongée, exposition aux risques sanitaires. Mon parcours, entre ingénierie et travail manuel en atelier ou sur chantier, m’a appris à travailler avec rigueur et persévérance, des qualités que je suis prêt(e) à mobiliser pleinement.
-
-Malgré ces contraintes, la chirurgie dentaire correspond parfaitement à mes aspirations. Elle allie expertise technique, relation humaine et autonomie, tout en offrant une finalité claire : soigner, soulager et améliorer la qualité de vie des patients. C’est dans cette voie que je souhaite désormais m’investir pleinement.
+J’ai également cherché à comprendre les aspects logistiques et organisationnels du métier. La gestion des stocks, de la comptabilité et des plannings m’apparaît comme un prolongement naturel de mon expérience en gestion de projet, où l’on engage des ressources et suit un cadre structuré. J’ai également pu observer que le bon fonctionnement d’un cabinet repose sur une organisation rigoureuse, souvent assistée par des logiciels adaptés, ce qui réduit la charge mentale. Sur le plan physique, bien que certains praticiens puissent ressentir des douleurs dues aux postures prolongées, je sais m’adapter aux contraintes physiques d’un métier manuel, ayant déjà travaillé en atelier et sur chantier. De plus, je suis attentif à ma condition physique et à ma posture, ce qui me semble essentiel pour exercer ce métier sur le long terme. Enfin, la forte demande dans certaines zones (notamment en zone sous-dotée) implique un volume de travail soutenu, mais il s’agit avant tout de fixer un cadre clair et de respecter des règles d’organisation pour préserver son équilibre de vie, notamment en réservant des créneaux pour les urgences et en restant ferme sur les horaires et les limites fixées.
 
 ### Brouillon
 ca va merci. A partir des points communs/differences suivants entre ingenieur et chirurgien dentiste, tu peux me faire des paragraphes sur le fait que je souhaite devenir dentiste car je veux changer de temporalite. Par temporalite j'entend garder les points communs mais troquer les differences en faveur de dentiste. Il y a aussi une difference que je veux integrer, c'est que les projets d'ingenieur n'ont pas forcement une finalite utile comme soigner les dents des gens. Les projets sont soumis un marche donc a une creation de besoin mercantile, de concurrence pour des marches d'objet materialiste et que je ne m'y retouve pas trop. Tu vois comment integrer ca ?  
@@ -113,4 +124,24 @@ De plus, la dentisterie représente un choix **plus stable et indépendant**, te
 ## Ai-je la capcite de suivre des etudes de sante ?
 
 penser a la curiosite
+
+- je sais ce qui m'attend comme matiere, je vais reviser les mooks (histologie, embryologie, physiologie, biologie moleculaire/cellulaire, biologie fondamentale, cours dentaire, anatomie dentaire/tete/coup)
+- prepa, j'ai déjà repris pour inge, dev, chaudronnerie
+- curiosite
+
+Encore une fois mes echange avec les praticients m ont conforte dans mes capacites a suivre la formation et reprendre l universite. Je suis psser par une prepa dont je garde la capacite de travail et d assimilition de connaissance complexes et en grande quantite. Cela s'est bien passe quand j'ai repris les etudes d'ingenieur. Ou quand j'ai change de do,aine pour le dev. Je n'ai jamais cesse de m'auto forme sur mon temps personnel a la fois par contrainte professionnel et pour satisfaire ma curiosite sur de nombreux domaine. Je me suis renseigne sur les mooks a travailler pour la rentree de septembre en histologie et anatomie.
+
+Une fois encore, mes échanges avec les praticiens m’ont conforté dans ma capacité à suivre la formation et à reprendre l’université. Ayant fait une classe préparatoire, j’en ai conservé une solide capacité de travail et une faculté d’assimilation rapide de connaissances complexes et en grande quantité. Cette aptitude m’a déjà permis de réussir ma reprise d’études en école d’ingénieur, ainsi que ma transition vers le développement informatique.
+
+J’ai toujours maintenu une dynamique d’auto-formation, à la fois par nécessité professionnelle et par curiosité personnelle, explorant divers domaines sur mon temps libre. Dans cette optique, je me suis déjà renseigné sur les MOOC et ressources à travailler en histologie et anatomie en vue de la rentrée de septembre.
+
 ## Comment je me suis organise ?
+- financierement : pole emploi, salaire tiph, CESP, famille, Economie
+- logistique : parents 1 heure, gestion de l'eloignement
+- je retourne dans un environnement que je connais
+
+Financièrement, j'ai des droits pole emploi pour les deux premieres annees de formation. Pendant que ma femme continuera de gagner un salaire confortable a Pekin la premiere annee. J'ajoute que nous n' avons pas d'enfant pour le moment et que l'eloignement est bien reflechi car je sais dans quel environnement elle evolue, elle a des vacances scolaires regulieres et nous avons déjà connu cette situation pendant plusieurs annees.   Par la suite je projette de signer un CESP m'engageant a exercer. Sur le plan pratique la fac de caen est tout indiquee. Mes parents vient a 1 heure de route et sont disposes a m'aider du mieux au'ils le peuvent.
+
+Financièrement, je bénéficierai de droits Pôle emploi pour les deux premières années de formation, tandis que ma femme continuera de percevoir un salaire confortable à Pékin durant la première année. De plus, n’ayant pas d’enfant pour le moment, l’éloignement a été une décision mûrement réfléchie. Je connais bien son environnement professionnel, elle bénéficie de vacances scolaires régulières, et nous avons déjà vécu cette situation pendant plusieurs années.
+
+À plus long terme, je prévois de signer un CESP, m’engageant ainsi à exercer. D’un point de vue pratique, la faculté de Caen est tout indiquée : mes parents résident à une heure de route et sont prêts à m’apporter leur aide autant que possible.
