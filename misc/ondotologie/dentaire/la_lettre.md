@@ -3,9 +3,8 @@ Après un bac scientifique en 2008, j’ai intégré une classe préparatoire au
 
 Sur le plan professionnel, j’ai débuté en 2014-2015 avec une expérience en chaudronnerie-soudure, avant de me reprendre mes etudes dans les systèmes embarqués et le développement logiciel. En 2017, lors de mon stage chez FACTEM, j’ai travaillé sur un casque audio à réduction de bruit, puis j’ai rejoint Notilo Plus (2018-2020), où j’ai développé des cartes electroniques et des logiciels pour un drone sous-marin autonome. J'ai demissione en 2020 pour suivre ma compagne en polynesie francaise. En 2021, j’ai eu l'opportunite d'etre professeur de physique et d’informatique dans deux lycées de Polynésie française. En 2022, j’ai réintégré le secteur de l’ingénierie en rejoignant Innovative Digital Technologies en tant que full-stack engineer, où je me suis spécialisé dans le développement de logicielle de commerce. Ceci jusqu'a mon arrivee en 2024 a Pekin ou je reside actuellement et ou j'effectue des remplacements dans les matieres scientifiques.
 
-Mon parcours illustre ma capacite a changer et ma polyvalence entre les sciences, l’ingénierie et l’enseignement, avec une évolution vers des technologies avancées et des environnements de développement logiciel complexes, tout en ayant une expérience significative dans la transmission des savoirs et le travail manuel.
+Donc, j'ai un parcours polyvalent, alliant sciences, ingénierie et enseignement. Tout en ayant plusieurs fois changé de secteur avec succès, j’ai évolué vers des technologies avancées et des environnements de développement logiciel complexes, tout en acquérant une expérience significative dans la transmission des savoirs et le travail manuel.
 
-Donc j'ai un parcours polyvalent... Tout en ayant plusieurs fois changer de secteurs avec succes.s 
 
 ## Quel est mon projet ?
 En choisissant de devenir chirurgien-dentiste, je concrétise un projet mûrement réfléchi, guidé par le désir d’exercer un métier à la fois concret, utile et autonome. Cette profession offre, en plus d’un cadre de travail stimulant, une stabilité sociale et salariale appréciable, ainsi que la liberté de choisir mon lieu d’exercice. Originaire d’une région où les besoins en dentistes sont importants, cette opportunité me permettrait également de m’installer durablement dans un cadre qui m’est cher, tout en bénéficiant du confort de vivre à proximité de mon activité professionnelle.
@@ -57,17 +56,15 @@ Afin de mieux appréhender les réalités et les contraintes du métier de chiru
 
 La gestion du patient lors du rendez-vous repose sur un socle technique et théorique solide, inscrit dans un cadre méthodologique structuré. En plus d'une entente bien travaillee avec l'assistant et d'un cadre ergonomique reflechi, la fluidité de la prise en charge découle d’une collecte rigoureuse des informations – par le biais de questions, d’observations et d’imagerie – consignées dans des notes de suivi. Elle s’appuie également sur un climat de confiance instaure par une communication adaptée, combinant pédagogie, discours rassurant et patience. Le choix de l’action la plus appropriée est ainsi réfléchi, validé et pleinement assumé. In fine, la charge mentale liée à la prise de décisions médicales et à la gestion du stress des patients anxieux est régulée de manière efficace.
 
-
-
+La fluidité de la prise en charge repose sur une collecte rigoureuse des informations (questions, observation, imagerie) consignées dans des notes de suivi et une climat de confiance/communication alliant pédagogie, patience et discours rassurant.
 
 Je me suis rassure sur la gestion pur du patient : fruit d'une formation solide a l'universite donc pas de souci plus experience progressive (Question Caro : c'est le cas ?)
 - Premier point : on est pret quand on sort de la formation => confiance dans les capacites techniques et connaissances theorique (et je peux les acquerir !), bonne pratique de gestion du patient (empathie et pedagogie avec les eleves/parents stresse, chemin detourne), tout est cadre, logiciel(ingenieur, cadre), bonne pratique => je sais prendre les bonnes decisions
 - Deuxieme point : vue du sang, degout, patient pendant rdv, pedagogie, relation avec assiatant => beaucoup de communication (et je sais communique car ingenieur)
 Je me suis d'abord rassure sur les capacites techniques, les connaissances, la gestion de l'acte (vue du sang), prise de decision, la relation avec le patient. Caroline m'a confirme que l'on etait pret en sortant de la formation qui est progressive. La pedagogie fesant echo au bonne pratique de la formation, le suivi du patient via le logiciel => tout ceci reduit la charge mentale et l'indecision de la prise de decision. Spontanement je pense a l'anestesie en deux point d'une dent a 4 racines',  climat de confiance
 
-Concernant l'aspect extra-clinique, j’ai constaté qu'un cabinet bien structuré repose sur une organisation efficace des stocks, des coûts et de l'assisstant. 
 
-J’ai pu me rassurer quant à la gestion des aspects extra-cliniques du métier, qu’il s’agisse de l’organisation, des contraintes physiques ou de l’équilibre travail-santé.
+La gestion d’un cabinet repose sur plusieurs aspects complémentaires. Le management inclut la formation de l’assistant, un point essentiel pour assurer une bonne coordination. Sur le plan logistique et administratif, une organisation efficace est primordiale : gestion des stocks, comptabilité et coordination avec l’assistant, ce qui me rappelle la gestion d’un projet avec des ressources engagées ou encore celle d’une classe sur une année, appuyée par des outils numériques. Concernant les contraintes physiques, bien que certains praticiens ressentent des douleurs, mon expérience en atelier et sur chantier, ainsi que mon engagement sportif, me préparent à préserver mes capacités sur le long terme. Enfin, en zone sous-dotée, la forte demande impose une gestion rigoureuse des créneaux d’urgence, une capacité à fixer des limites pour préserver sa santé, ainsi qu’une attention particulière à la réputation du cabinet.
 
 D’un point de vue logistique et administratif, j’ai constaté qu’un cabinet bien structuré repose sur une organisation efficace des stocks, des coûts et du personnel. Cet aspect me semble transposable à mon expérience en gestion de projet ou de classe, où la planification et l’optimisation des ressources sont essentielles. L’usage de logiciels spécialisés facilite également cette gestion, comme dans mes expériences passées.
 
@@ -76,11 +73,12 @@ Sur le plan physique, bien que la posture prolongée puisse engendrer des douleu
 Enfin, dans une zone rouge à forte demande, il est crucial d’équilibrer disponibilité et santé. La gestion des urgences, la fermeté sur les créneaux et le respect de règles établies permettent d’éviter l’épuisement tout en garantissant une pratique sereine et durable. La réputation du praticien repose aussi sur cette capacité à structurer son exercice avec rigueur et efficacité.
 
 Je me suis rassure sur la gestion des a cote
+- Management : formation de l'assistant (Question Caroline)
 - Logistique, stock et administratif (cout, compta, assistant) : encore une fois j'ai ete dans un cabinet bien gere, avec une bonne organisation (Question Caro : cela s'apprend comment ?) et moi je suis organise et cela fait echo a la gestion d'un projet sur lequel des ressources sont engagees ou la gestion d'une classe sur l'annee, voir loinet aide de logiciel!
 - Physique : Caroline a des douleurs d'epaules (Question Caroline : tu qs des douleurs), mais moi j'ai deja bosse en atelier et sur chantier, plus je suis toujours sportif et je travaille justement a maintenir mes capacites sur le long terme
 - en dehors : zone rouge donc beaucoup de demande => creneaux urgences + fermete + respecter les regles que l'on s'est fixe (pour duree et ne pas sacrifier sa sante) (Question caro : comment tu fais), reputation
 
-Pour resumer, des acquis techniques et theoriques, une methologie et une organisation rodees, de l'endurance. Avec un recul quotidien. moi je peux faire ca 
+Pour resumer, des acquis techniques et theoriques, une methologie et une organisation rodees, conscience d'avoir une bonne organisation et un bon management (je n'hesiterais pas a me former), de l'endurance. Avec un recul quotidien. moi je peux faire ca 
 
 
 ####
